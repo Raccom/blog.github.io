@@ -24,7 +24,7 @@
             //   const { data: res } = await axios.get('https://cnodejs.org/api/v1/topics')
             //   console.log('res', res)
                 const url = location.href
-                const path = url.split('/').pop()
+                const path = url.split('?').pop()
                 switch (path) {
                     case 'cc':
                         location.href = 'https://cc-1310654229.cos-website.ap-guangzhou.myqcloud.com'
