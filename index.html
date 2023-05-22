@@ -2,41 +2,12 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
-    <title>Test</title>
+    <title>loading..</title>
 </head>
 <body>
     <div id='app'></div>
 </body>
-<script src='https://cdn.bootcdn.net/ajax/libs/vue/2.6.13/vue.js'></script>
-<script src='https://cdn.bootcdn.net/ajax/libs/axios/1.0.0-alpha.1/axios.min.js'></script>
 <script>
-    const app = new Vue({
-        created() {
-            this.init()
-        },
-        data: () => {
-            return {
-                
-            }
-        },
-        methods:{
-            async init(){
-            //   const { data: res } = await axios.get('https://cnodejs.org/api/v1/topics')
-            //   console.log('res', res)
-                const url = location.href
-                const path = url.split('?').pop()
-                switch (path) {
-                    case 'cc':
-                        location.href = 'https://cc-1310654229.cos-website.ap-guangzhou.myqcloud.com'
-                        break;
-                    case 'blog':
-                        location.href = 'https://raccon-1310654229.cos-website.ap-guangzhou.myqcloud.com'
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
-    }).$mount('#app')
+    location.href = 'https://raccon-1310654229.cos-website.ap-guangzhou.myqcloud.com'
 </script>
 </html>
