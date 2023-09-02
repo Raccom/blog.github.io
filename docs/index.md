@@ -5,8 +5,8 @@ layoutClass: 'm-home-layout'
 hero:
   # 使用 theme/components/AnimateTitle.vue 代替 
   # name: Raccom
-  # text: 个人博客
-  # tagline: 寒冬已至
+  # text: 博客
+  # tagline: 
   image:
     src: /logo.png
     alt: raccom
@@ -14,52 +14,35 @@ hero:
     - text: Get Started
       link: /start/
       theme: brand
-    - text: Front Nav
+    - text: Nav
       link: /nav/
       theme: alt
 features:
-  - icon: 📖
-    title: 学习历程
-    details: 整理学习过程中的知识点<br />面向百度开发
-  - icon: 💡
-    title: 奇技淫巧
-    details: 提升效率的奇淫技巧<br />让代码(看起来)更高级
-  - icon: 📘
-    title: 源码阅读
-    details: 了解各种库的实现原理<br />从入门到入梦
-  - icon: 🧰
-    title: 实用工具
-    details: 工欲善其事，必先利其器<br />记录日常使用的网页、工具、素材
-  - icon: 🐞
-    title: 踩坑记录
-    details: 踩不完的坑<br />焦头烂额还搜不到的各种bug
-  - icon: 🐟
-    title: 科学上班
-    details: '
-      <small class="bottom-small"><s>摆烂</s> 灵活奋斗</small>
-    '
+  - icon: ⚡
+    title: Code
+    details: 开发使用的代码片段，Demo，应用实例等
+    linkText: next
+    link: /code/js/
+  - icon: 🔧
+    title: Tools
+    details: 整理日常使用的工具
+    linkText: use
+    link: /nav/
+  - icon: 🐛
+    title: Bug
+    details: 疑难杂症偏方
+    linkText: fix
+    link: /start/
 ---
 
 <style lang="scss">
-
-.m-home-layout .details small {
-    opacity: 0.8;
+.m-home-layout .image-src{
+    opacity: 0.9;
+    transition: .3s;
 }
-
-.m-home-layout .bottom-small {
-  display: block;
-  margin-top: 2em;
-  text-align: right;
+.m-home-layout .image-src:hover {
+    opacity: 1;
 }
-
-.beian a:hover{
-    color: #10b981
-}
-
-.copyright{
-  font-size: 14px
-}
-
 </style>
 
 <script lang="ts" setup>

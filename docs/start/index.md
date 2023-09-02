@@ -4,7 +4,7 @@ layoutClass: m-start-layout
 
 <script setup>
 </script>
-<style src="./index.scss"></style>
+<style lang='scss'></style>
 
 # 博文
 

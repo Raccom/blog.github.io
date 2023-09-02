@@ -19,22 +19,24 @@ export default defineConfig({
 
   /* 主题配置 */
   themeConfig: {
-    i18nRouting: false,
-
-    logo: '/logo.png',
-
     nav,
     sidebar,
+    i18nRouting: false,
+    logo: '/logo.png',
+
     /* 右侧大纲配置 */
     outline: {
       level: 'deep',
-      label: '本页目录'
+      label: '目录'
     },
+
     socialLinks: [{ icon: 'github', link: 'https://github.com/raccom' }],
+
     footer: {
       message: '',
       copyright: 'Copyright © 2023 Raccom'
     },
+
     darkModeSwitchLabel: '外观',
     returnToTopLabel: '返回顶部',
     lastUpdatedText: '上次更新',

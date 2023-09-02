@@ -4,8 +4,8 @@
   <h1 class="name">
     <span class="clip">Raccom</span>
   </h1>
-  <p class="text">Personal Blog</p>
-  <p class="tagline">The Cold Winter Has Arrived</p>
+  <p class="text">Utils Lib</p>
+  <p class="tagline">Cold Winter Has Arrived</p>
 </template>
 
 <style scoped>
