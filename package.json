@@ -1,19 +1,19 @@
 {
   "name": "vitepress-fe-nav",
   "version": "1.0.0",
-  "description": "基于 VitePress 打造个人前端导航网站",
+  "description": "基于 VitePress 的个人web站点",
   "private": true,
   "scripts": {
     "dev": "vitepress dev docs --port=5175",
     "build": "vitepress build docs"
   },
-  "author": "raccon <tyuf64@163.com>",
+  "author": "raccom <tyuf64@163.com>",
   "license": "MIT",
   "devDependencies": {
     "@femm/prettier": "^1.0.1",
     "@mdit-vue/shared": "^0.12.0",
     "sass": "^1.58.3",
-    "vitepress": "1.0.0-alpha.48",
+    "vitepress": "1.0.0-alpha.50",
     "vue": "^3.2.47"
   },
   "prettier": "@femm/prettier"

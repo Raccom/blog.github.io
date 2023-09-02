@@ -1,6 +1,7 @@
 import { h } from 'vue'
 import { useData } from 'vitepress'
 import Theme from 'vitepress/theme'
+import AnimateTitle from "./components/AnimateTitle.vue";
 
 import './styles/index.scss'
 
@@ -14,7 +15,8 @@ export default Object.assign({}, Theme, {
     if (frontmatter.value?.layoutClass) {
       props.class = frontmatter.value.layoutClass
     }
-
-    return h(Theme.Layout, props)
+    return h(Theme.Layout, props, {
+      "home-hero-info": () => h(AnimateTitle),
+    })
   }
 })
