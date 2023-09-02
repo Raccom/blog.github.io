@@ -11,10 +11,10 @@ hero:
     src: /logo.png
     alt: raccom
   actions:
-    - text: 快速开始
+    - text: Get Started
       link: /start/
       theme: brand
-    - text: 导航
+    - text: Front Nav
       link: /nav/
       theme: alt
 features:
