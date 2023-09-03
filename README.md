@@ -1,4 +1,4 @@
-# vitepress-doc
+# vitepress
 
 ## 依赖安装
 

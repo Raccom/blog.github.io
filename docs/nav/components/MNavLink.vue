@@ -47,6 +47,7 @@ const svg = computed(() => {
   height: 100%;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
   &:hover {
     background-color: var(--vp-c-bg-soft);
   }

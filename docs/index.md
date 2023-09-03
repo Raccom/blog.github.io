@@ -12,7 +12,7 @@ hero:
     alt: raccom
   actions:
     - text: Get Started
-      link: /start/
+      link: /code/js/
       theme: brand
     - text: Nav
       link: /nav/
@@ -31,8 +31,8 @@ features:
   - icon: 🐛
     title: Bug
     details: 疑难杂症偏方
-    linkText: fix
-    link: /start/
+    # linkText: fix
+    link: /
 ---
 
 <style lang="scss">
