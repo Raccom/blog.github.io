@@ -4,7 +4,7 @@ import { jsPath, tsPath, javaPath } from './options'
 export const sidebar: DefaultTheme.Config['sidebar'] = [
     {
         text: 'Utils',
-        items: [{ text: 'Nav', link: '/nav/' }]
+        items: []
     },
     {
         text: 'JavaScript',

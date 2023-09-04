@@ -1,11 +1,15 @@
 import type { HeadConfig } from 'vitepress'
 
 export const head: HeadConfig[] = [
-  ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-  ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-  ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-  ['link', { rel: 'apple-touch-icon', href: '/favicon.ico' }],
-  ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#3eaf7c' }],
-  ['meta', { name: 'msapplication-TileImage', content: '/favicon.ico' }],
-  ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'theme-color', content: '#5f67ee' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'zh-CN' }],
+    ['meta', { name: 'og:site_name', content: 'Raccom' }],
+
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/favicon.ico' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/favicon.ico' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
 ]

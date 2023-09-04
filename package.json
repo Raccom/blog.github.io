@@ -1,7 +1,7 @@
 {
     "name": "raccom",
     "version": "1.0.0",
-    "description": "日常开发所用工具集",
+    "description": "开发工具集",
     "private": true,
     "type": "module",
     "scripts": {
@@ -12,7 +12,6 @@
     "author": "raccom <tyuf64@163.com>",
     "license": "MIT",
     "devDependencies": {
-        "@mdit-vue/shared": "^0.12.0",
         "@types/node": "^16.9.1",
         "sass": "^1.58.3",
         "vitepress": "latest",

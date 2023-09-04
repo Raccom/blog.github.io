@@ -14,8 +14,8 @@ hero:
     - text: Get Started
       link: /code/js/
       theme: brand
-    - text: Nav
-      link: /nav/
+    - text: Utils
+      link: /code/js/
       theme: alt
 features:
   - icon: ⚡
@@ -27,7 +27,7 @@ features:
     title: Tools
     details: 整理日常使用的工具
     linkText: use
-    link: /nav/
+    link: /code/js/
   - icon: 🐛
     title: Bug
     details: 疑难杂症偏方 (feature)
