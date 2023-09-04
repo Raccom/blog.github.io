@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitepress';
-import { head, nav, sidebar } from './configs'
+import {defineConfig} from 'vitepress';
+import {head, nav, sidebar} from './configs'
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
@@ -48,7 +48,7 @@ export default defineConfig({
         */
 
         // 顶部栏右侧icon
-        socialLinks: [{ icon: 'github', link: 'https://github.com/raccom' }],
+        socialLinks: [{icon: 'github', link: 'https://github.com/raccom'}],
 
         /* 右侧大纲配置 */
         outline: {
@@ -62,6 +62,11 @@ export default defineConfig({
             text: '在 Github 上编辑此页'
         },
 
+        // 上次更新
+        lastUpdated: {
+            text: '上次更新',
+        },
+
         docFooter: {
             prev: '上一篇',
             next: '下一篇'
@@ -69,12 +74,11 @@ export default defineConfig({
 
         // 底部栏
         footer: {
-            message: '',
-            copyright: 'Copyright © 2023 Raccom'
+            message: 'Early Access',
+            copyright: 'Copyright © 2022-present Raccom'
         },
 
         darkModeSwitchLabel: '外观',
         returnToTopLabel: '返回顶部',
-        lastUpdatedText: '上次更新',  
     },
 });

@@ -20,7 +20,7 @@ hero:
 features:
   - icon: ⚡
     title: Code
-    details: 开发使用的代码片段，Demo，应用实例等
+    details: 开发使用的代码片段
     linkText: next
     link: /code/js/
   - icon: 🔧
@@ -30,7 +30,7 @@ features:
     link: /nav/
   - icon: 🐛
     title: Bug
-    details: 疑难杂症偏方
+    details: 疑难杂症偏方 (feature)
     # linkText: fix
     link: /
 ---

@@ -1,23 +1,21 @@
----
-layoutClass: m-page-layout
----
-
 <script setup>
-import { useData } from 'vitepress'
-import {ref} from 'vue'
+import { ref } from 'vue';
+import { useData } from 'vitepress';
 
-const pg = ref(1)
+const { page } = useData();
+
+const pg = ref(1);
 const add = () => {
     pg.value++
-}
+};
 
-const { page } = useData()
 </script>
-<style lang='scss'></style>
+<style lang='scss'>
+</style>
 
 # ts
 
-## 第一篇博文还在编写中哦...
+## first...
 
 :::tip
 提示
@@ -45,6 +43,9 @@ javascript: void (function () {
 ```
 
 
-<span>{{pg}}</span>
-
-<button @click='add'>add</button>
+::: raw
+<div class="ts_index container">
+    <span>{{pg}}</span>
+    <button @click='add'>add</button>
+</div>
+:::

@@ -1,14 +1,10 @@
----
-layoutClass: m-page-layout
----
-
 <script setup>
 </script>
 <style lang='scss'></style>
 
 # js
 
-## 第一篇博文还在编写中哦...
+## first...
 
 :::tip
 提示

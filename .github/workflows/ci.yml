@@ -1,5 +1,5 @@
 # ci.yml
-name: io
+name: cd
 on:
   push:
     branches:

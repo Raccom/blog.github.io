@@ -22,3 +22,8 @@
 .custom-block .custom-block-title {
   font-size: 16px;
 }
+
+// 防止页面中使用html标签导致宽度边化闪烁
+.container{
+    width: 100%;
+}
