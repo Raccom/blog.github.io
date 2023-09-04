@@ -30,3 +30,6 @@ javascript: void (function () {
     document.scrollingElement.scrollIntoView({ behavior: 'smooth' })
 })()
 ```
+<h1>123</h1>
+<h2>123</h2>
+<h3>123</h3>

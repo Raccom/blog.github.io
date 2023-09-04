@@ -7,7 +7,9 @@ const data = [
             {
                 img: ''
             }
-        ]
+        ],
+        size: 'mini'
+        // big xmini mini
     },
     {
         items: [
@@ -20,19 +22,19 @@ const data = [
 </script>
 
 <template>
-    <a class="viteconf" href="/" target="_blank">
-        <img width="22" height="22" src="/viteconf.svg"/>
+    <a class="notice" href="/" target="_blank">
+        <img width="22" height="22" src="/java.svg"/>
         <span>
-          <p class="extra-info">Free Online Conference</p>
-          <p class="heading">ViteConf 23 - Oct 5</p>
-          <p class="extra-info">Get your ticket now!</p>
+          <p class="extra-info">Learning & Organizing...</p>
+          <p class="heading">Java and Sql</p>
+          <p class="extra-info">Update soon!</p>
         </span>
     </a>
     <VPDocAsideSponsors :data="data"/>
 </template>
 
 <style>
-.viteconf {
+.notice {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 14px;
@@ -52,22 +54,22 @@ const data = [
     transition: border-color 0.5s;
 }
 
-.viteconf:hover {
+.notice:hover {
     border: 2px solid #5672cd;
 }
 
-.viteconf img {
+.notice img {
     position: absolute;
     left: 1.5rem;
     transition: transform 0.5s;
     transform: scale(1.25);
 }
 
-.viteconf:hover img {
+.notice:hover img {
     transform: scale(1.75);
 }
 
-.viteconf .heading {
+.notice .heading {
     background-image: linear-gradient(
         120deg,
         #b047ff 16%,
@@ -79,7 +81,7 @@ const data = [
     -webkit-text-fill-color: transparent;
 }
 
-.viteconf .extra-info {
+.notice .extra-info {
     color: var(--vp-c-text-1);
     opacity: 0;
     font-size: 0.7rem;
@@ -87,7 +89,7 @@ const data = [
     transition: opacity 0.5s;
 }
 
-.viteconf:hover .extra-info {
+.notice:hover .extra-info {
     opacity: 0.9;
 }
 
