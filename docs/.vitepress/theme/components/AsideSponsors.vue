@@ -5,8 +5,10 @@ const data = [
     {
         items: [
             {
-                img: ''
-            }
+                name: 'StackBlitz',
+                url: 'https://stackblitz.com',
+                img: '/spon/stackblitz.svg',
+            },
         ],
         size: 'mini'
         // big xmini mini
@@ -14,18 +16,44 @@ const data = [
     {
         items: [
             {
-                img: ''
+                name: 'typescript',
+                url: 'https://www.typescriptlang.org/zh/play',
+                img: '/spon/ts.svg',
+            },
+        ],
+        size: 'mini'
+    },
+    {
+        items: [
+            {
+                name: 'java',
+                url: 'https://www.compilejava.net/',
+                img: '/spon/javaCode.png',
+            },
+            {
+                name: 'vue3',
+                url: 'https://play.vuejs.org',
+                img: '/spon/vue.svg',
+            },
+        ],
+        size: 'xmini'
+    },
+    {
+        items: [
+            {
+                img: '/spon/ghost.png'
             }
-        ]
+        ],
+        size: 'mini'
     }
 ]
 </script>
 
 <template>
     <a class="notice" href="/" target="_blank">
-        <img width="22" height="22" src="/java.svg"/>
+        <img width="22" height="22" src="/spon/java.svg"/>
         <span>
-          <p class="extra-info">Learning & Organizing...</p>
+          <p class="extra-info">Learning & Organizing</p>
           <p class="heading">Java and Sql</p>
           <p class="extra-info">Update soon!</p>
         </span>
