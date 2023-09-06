@@ -1,5 +1,5 @@
-import type { DefaultTheme } from 'vitepress'
-import { jsPath, tsPath, javaPath } from './options'
+import type {DefaultTheme} from 'vitepress'
+import {javaPath, jsPath, tsPath} from './options'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
     '/code': [

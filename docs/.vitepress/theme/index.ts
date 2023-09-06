@@ -3,6 +3,7 @@ import {EnhanceAppContext, useData} from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import AnimateTitle from "./components/AnimateTitle.vue";
 import AsideSponsors from './components/AsideSponsors.vue'
+import NavLinks from './components/NavLinks.vue'
 
 import './styles/index.scss'
 
@@ -40,13 +41,14 @@ export default {
         })
     },
     enhanceApp({app, router}: EnhanceAppContext) {
-        //app.component('componentName', Component)
+        app.component('NavLinks', NavLinks)
 
         app.provide('DEV', process.env.NODE_ENV === 'development')
 
         if (typeof window !== 'undefined') {
             watch(
                 () => router.route.data.relativePath,
+                () => {},
                 { immediate: true }
             )
         }

@@ -3,6 +3,11 @@ import { cosPath } from './options'
 
 export const nav: DefaultTheme.Config['nav'] = [
     {
+        text: 'Nav',
+        link: '/nav/',
+        activeMatch: '/nav/'
+    },
+    {
         text: 'Language',
         items: [
             {
@@ -29,7 +34,7 @@ export const nav: DefaultTheme.Config['nav'] = [
                         link: '/code/java/'
                     }
                 ]
-            }, 
+            },
         ],
         activeMatch: '^/code'
     },
