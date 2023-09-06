@@ -5,9 +5,9 @@ const data = [
     {
         items: [
             {
-                name: 'StackBlitz',
-                url: 'https://stackblitz.com',
-                img: '/spon/stackblitz.svg',
+                name: 'java',
+                url: 'https://www.compilejava.net/',
+                img: '/spon/java2.png',
             },
         ],
         size: 'mini'
@@ -26,14 +26,12 @@ const data = [
     {
         items: [
             {
-                name: 'java',
-                url: 'https://www.compilejava.net/',
-                img: '/spon/javaCode.png',
-            },
-            {
                 name: 'vue3',
                 url: 'https://play.vuejs.org',
                 img: '/spon/vue.svg',
+            },
+            {
+                img: '/spon/ghost.png'
             },
         ],
         size: 'xmini'
@@ -41,8 +39,10 @@ const data = [
     {
         items: [
             {
-                img: '/spon/ghost.png'
-            }
+                name: 'StackBlitz',
+                url: 'https://stackblitz.com',
+                img: '/spon/stackblitz.svg',
+            },
         ],
         size: 'mini'
     }
@@ -51,7 +51,7 @@ const data = [
 
 <template>
     <a class="notice" href="/" target="_blank">
-        <img width="22" height="22" src="/spon/java.svg"/>
+        <img width="22" height="22" src="/spon/javaCode.png"/>
         <span>
           <p class="extra-info">Learning & Organizing</p>
           <p class="heading">Java and Sql</p>
@@ -83,7 +83,7 @@ const data = [
 }
 
 .notice:hover {
-    border: 2px solid #5672cd;
+    border: 2px solid #c50b17;
 }
 
 .notice img {
@@ -100,9 +100,8 @@ const data = [
 .notice .heading {
     background-image: linear-gradient(
         120deg,
-        #b047ff 16%,
-        #9499ff,
-        #5672cd
+        #c50b17 16%,
+        #505050
     );
     background-clip: text;
     -webkit-background-clip: text;
