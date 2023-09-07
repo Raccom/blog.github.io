@@ -12,7 +12,7 @@ const jsRouter: RouterItem[] = [
 
 const tsRouter: RouterItem[] = [
     {
-        name: 'index',
+        name: '类型挑战',
         path: ''
     },
 ]
@@ -26,8 +26,12 @@ const javaRouter: RouterItem[] = [
 
 const CommonRouter: RouterItem[] = [
     {
-        name: 'index',
+        name: 'Git 命令',
         path: ''
+    },
+    {
+        name: '解除占用端口',
+        path: '/port'
     },
 ]
 

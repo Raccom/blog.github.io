@@ -1,35 +1,36 @@
-<script setup>
-</script>
-<style lang='scss'></style>
+# 视频中提取音频
 
-# js
+将视频中的音频轨道分离出来，生成 `wav` 文件播放或下载
 
-## first...
-
-:::tip
-提示
-:::
-:::warning
-提示
-:::
-:::danger
-提示
-:::
-:::info 
-```ts
-javascript: void (function () {
-    document.scrollingElement.scrollIntoView({ behavior: 'smooth' })
-})()
+```html
+<button>
+    <label for="file" id="filename">选择视频文件</label>
+    <input type="file" name="file" id="file" accept="video/*,audio/*" @change="fileChange">
+</button>
 ```
-:::
-::: details 模拟实现 new 运算符 
-<<< @/code/js/test/test.js 
-:::
-```ts {2}
-javascript: void (function () {
-    document.scrollingElement.scrollIntoView({ behavior: 'smooth' })
-})()
+```css
+button {
+    position: absolute;
+    top: calc(50vh - 30px);
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
 ```
-<h1>123</h1>
-<h2>123</h2>
-<h3>123</h3>
+<<< @/code/snippets/js/getVideoSound.js
+

@@ -42,3 +42,81 @@ $ bun add -D vitepress
 
 :::
 
+:::tip
+提示
+:::
+:::warning
+提示
+:::
+:::danger
+提示
+:::
+:::info 
+```ts
+javascript: void (function () {
+    document.scrollingElement.scrollIntoView({ behavior: 'smooth' })
+})()
+```
+:::
+::: details 模拟实现 new 运算符 
+<<< @/code/snippets/java/test.js 
+:::
+```ts {2}
+javascript: void (function () {
+    document.scrollingElement.scrollIntoView({ behavior: 'smooth' })
+})()
+```
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!' // [!code  hl]
+    }
+  }
+}
+```
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Focused!' // [!code  focus]
+    }
+  }
+}
+```
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code  --]
+      msg: 'Added' // [!code  ++]
+    }
+  }
+}
+```
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Error', // [!code  error]
+      msg: 'Warning' // [!code  warning]
+    }
+  }
+}
+```
+
+```ts {1}
+// line-numbers is disabled by default
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
+
+```ts:line-numbers {1}
+// line-numbers is enabled
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
