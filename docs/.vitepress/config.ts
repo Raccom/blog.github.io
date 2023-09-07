@@ -23,8 +23,6 @@ export default defineConfig({
     },
 
     themeConfig: {
-        // i18路由 暂不支持
-        i18nRouting: false,
         // 导航栏
         nav,
         // 侧导航栏

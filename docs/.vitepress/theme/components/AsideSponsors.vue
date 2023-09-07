@@ -2,16 +2,15 @@
 import {VPDocAsideSponsors} from 'vitepress/theme'
 
 const data = [
+    // size: big xmini mini
     {
         items: [
             {
                 name: 'java',
                 url: 'https://www.compilejava.net/',
-                img: '/spon/java2.png',
+                img: '/spon/java.svg',
             },
         ],
-        size: 'mini'
-        // big xmini mini
     },
     {
         items: [
@@ -31,7 +30,9 @@ const data = [
                 img: '/spon/vue.svg',
             },
             {
-                img: '/spon/ghost.png'
+                name: 'emoji',
+                url: 'https://www.emojiall.com/zh-hans',
+                img: '/spon/ghost.png' 
             },
         ],
         size: 'xmini'
@@ -45,7 +46,7 @@ const data = [
             },
         ],
         size: 'mini'
-    }
+    },
 ]
 </script>
 
