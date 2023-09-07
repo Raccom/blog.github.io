@@ -11,6 +11,7 @@ const data = [
                 img: '/spon/java.svg',
             },
         ],
+        // size: 'mini'
     },
     {
         items: [

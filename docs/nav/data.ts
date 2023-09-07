@@ -10,66 +10,109 @@ export const NAV_DATA: NavData[] = [
         title: 'ChatGPT',
         items: [
             {
-                icon: 'https://caniuse.com/img/favicon-128.png',
-                title: 'Can I use',
-                desc: '前端 API 兼容性查询',
-                link: 'https://caniuse.com'
+                icon: '/icons/poe.svg',
+                title: 'Poe',
+                desc: '快速、有用的AI聊天',
+                link: 'https://poe.com/ChatGPT'
+            },
+            {
+                icon: '/icons/forefront.svg',
+                title: 'Forefront',
+                desc: '你的人工智能助理',
+                link: 'https://www.forefront.ai/app/chat'
+            },
+            {
+                icon: '/icons/antdgpt.svg',
+                title: '公益导航',
+                desc: 'ChatGPT 无需翻墙，不限次数',
+                link: 'http://124.220.104.235/web/chatgpt'
             },
         ]
     },
     {
-        title: 'React 生态',
+        title: 'Code',
         items: [
             {
-                icon: 'https://zh-hans.reactjs.org/favicon.ico',
-                title: 'React',
-                desc: '用于构建用户界面的 JavaScript 库',
-                link: 'https://zh-hans.reactjs.org'
+                icon: '/icons/niuke.png',
+                title: '牛客',
+                desc: '求职之前, 先上牛客',
+                link: 'https://www.nowcoder.com/exam/intelligent'
+            },
+            {
+                icon: '/icons/leetcode.svg',
+                title: 'leetCode',
+                desc: '全球 IT 人才职业技能成长平台',
+                link: 'https://leetcode.cn/'
             },
         ]
     },
     {
-        title: 'Vue 生态',
+        title: 'Doc',
+        items: [
+            {
+                icon: '/icons/browser.svg',
+                title: 'Chorme',
+                desc: '浏览器工作原理与实践',
+                link: 'https://blog.poetries.top/browser-working-principle/guide/part1/lesson01.html'
+            },
+            {
+                icon: '/icons/css.png',
+                title: 'Css 灵感',
+                desc: '让你寻找到使用或者是学习 CSS 的灵感',
+                link: 'https://chokcoco.github.io/CSS-Inspiration/#/'
+            },
+            {
+                icon: '/icons/webpack.svg',
+                title: 'webpack',
+                desc: '深入浅出 Webpack',
+                link: 'https://webpack.wuhaolin.cn/'
+            },
+            {
+                icon: '/icons/ts.svg',
+                title: 'TypeScript',
+                desc: '深入理解 TypeScript',
+                link: 'https://jkchao.github.io/typescript-book-chinese/'
+            },
+            {
+                icon: '/icons/cocos.svg',
+                title: 'COCOS',
+                desc: 'TS 游戏引擎中文文档',
+                link: 'https://docs.cocos.com/creator/manual/zh/'
+            },
+        ]
+    },
+    {
+        title: '源码',
         items: [
             {
                 icon: 'https://cn.vuejs.org/logo.svg',
+                title: 'Vue 2技术揭秘',
+                desc: '分析 Vue 2 源码课程',
+                link: 'https://ustbhuangyi.github.io/vue-analysis/v2/prepare/'
+            },
+            {
+                icon: '/icons/react.svg',
+                title: 'React 技术揭秘',
+                desc: '分析 React 源码课程',
+                link: 'https://react.iamkasong.com/diff/multi.html'
+            },
+            {
+                icon: 'https://cn.vuejs.org/logo.svg',
                 title: 'Vue 3',
-                desc: '渐进式 JavaScript 框架',
-                link: 'https://cn.vuejs.org'
+                desc: 'Vue 3 源码解析',
+                link: 'https://template-explorer.vuejs.org/'
             },
             {
                 icon: 'https://cn.vuejs.org/logo.svg',
                 title: 'Vue 2',
-                desc: '渐进式 JavaScript 框架',
-                link: 'https://v2.cn.vuejs.org'
-            },
-        ]
-    },
-    {
-        title: 'Node 相关',
-        items: [
-            {
-                icon: '/icons/nodejs.svg',
-                title: 'Node.js',
-                desc: 'Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境',
-                link: 'https://nodejs.org/zh-cn'
-            },
-        ]
-    },
-    {
-        title: '编译&构建&打包',
-        items: [
-            {
-                icon: 'https://www.webpackjs.com/icon_180x180.png',
-                title: 'Webpack 中文网',
-                desc: '一个用于现代 JavaScript 应用程序的静态模块打包工具',
-                link: 'https://www.webpackjs.com'
+                desc: 'Vue 2 源码解析',
+                link: 'https://v2.template-explorer.vuejs.org/'
             },
             {
-                icon: 'https://cn.vitejs.dev/logo.svg',
-                title: 'Vite 中文文档',
-                desc: '下一代前端工具链',
-                link: 'https://cn.vitejs.dev'
+                icon: '/icons/ast.svg',
+                title: 'AST',
+                desc: 'AST 抽象语法树解析',
+                link: 'https://astexplorer.net/'
             },
         ]
     },
