@@ -24,6 +24,13 @@ const javaRouter: RouterItem[] = [
     },
 ]
 
+const CommonRouter: RouterItem[] = [
+    {
+        name: 'index',
+        path: ''
+    },
+]
+
 const cosName: RouterItem[] = [
     {
         name: 'cc',
@@ -34,7 +41,7 @@ const cosName: RouterItem[] = [
         path: 'site-1310654229'
     },
     {
-        name: 'index',
+        name: 'aigc',
         path: 'index-1310654229'
     },
 ]
@@ -50,8 +57,10 @@ const routerToPath = (routers: RouterItem[], rootPath: string) => {
 const cosNameToPath = (routers: RouterItem[]) => {
     return routers.map(({name, path}) => {
         return {
-            text: name,
-            link: `https://${path}.cos-website.ap-guangzhou.myqcloud.com`
+            items: [{
+                text: name,
+                link: `https://${path}.cos-website.ap-guangzhou.myqcloud.com`
+            }]
         }
     })
 }
@@ -60,3 +69,4 @@ export const cosPath = cosNameToPath(cosName)
 export const jsPath = routerToPath(jsRouter, '/code/js')
 export const tsPath = routerToPath(tsRouter, '/code/ts')
 export const javaPath = routerToPath(javaRouter, '/code/java')
+export const CommonPath = routerToPath(CommonRouter, '/code/Common')

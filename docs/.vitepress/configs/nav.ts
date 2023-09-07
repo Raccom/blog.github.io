@@ -16,22 +16,18 @@ export const nav: DefaultTheme.Config['nav'] = [
                     {
                         text: 'JavaScript',
                         link: '/code/js/'
-                    }
-                ]
-            },
-            {
-                items: [
+                    },
                     {
                         text: 'TypeScript',
                         link: '/code/ts/'
-                    }
-                ]
-            },
-            {
-                items: [
+                    },
                     {
                         text: 'Java',
                         link: '/code/java/'
+                    },
+                    {
+                        text: 'Common',
+                        link: '/code/common/'
                     }
                 ]
             },

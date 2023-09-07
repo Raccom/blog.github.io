@@ -1,5 +1,5 @@
 import type {DefaultTheme} from 'vitepress'
-import {javaPath, jsPath, tsPath} from './options'
+import {javaPath, jsPath, tsPath, CommonPath} from './options'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
     '/code': [
@@ -17,6 +17,11 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             text: 'Java',
             collapsed: true,
             items: javaPath
+        },
+        {
+            text: 'Common',
+            collapsed: true,
+            items: CommonPath
         },
     ]
 }
