@@ -46,5 +46,4 @@ features:
 </style>
 
 <script lang="ts" setup>
-  import './utils/version.ts';
 </script>

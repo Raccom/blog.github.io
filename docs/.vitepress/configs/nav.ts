@@ -40,8 +40,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     },
     {
         text: 'Site',
-        link: '/iframe/',
-        activeMatch: '/iframe/'
+        link: '/cc/',
+        activeMatch: '/cc/'
     },
     {
         text: 'csdn',

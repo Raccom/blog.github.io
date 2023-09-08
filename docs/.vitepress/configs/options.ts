@@ -41,10 +41,6 @@ const CommonRouter: RouterItem[] = [
 
 const cosName: RouterItem[] = [
     {
-        name: 'cc',
-        path: 'cc-1310654229'
-    },
-    {
         name: 'site',
         path: 'site-1310654229'
     },
@@ -62,6 +58,7 @@ const routerToPath = (routers: RouterItem[]) => {
         }
     })
 }
+
 const cosNameToPath = (routers: RouterItem[]) => {
     return routers.map(({name, path}) => {
         return {
