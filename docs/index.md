@@ -12,7 +12,7 @@ hero:
     alt: raccom
   actions:
     - text: Get Started
-      link: /code/java/
+      link: /code/java/first
       theme: brand
     - text: Nav
       link: /nav/
@@ -22,7 +22,7 @@ features:
     title: Feature
     details: 开发使用的功能模块
     linkText: next
-    link: /code/java/
+    link: /code/java/first
   - icon: 🔧
     title: Tools
     details: 整理日常使用的工具

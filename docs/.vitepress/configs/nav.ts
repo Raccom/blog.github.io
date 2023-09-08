@@ -14,25 +14,34 @@ export const nav: DefaultTheme.Config['nav'] = [
                 // text: 'js',
                 items: [
                     {
+                        text: 'Java',
+                        link: '/code/java/first',
+                        activeMatch: '^/code/java'
+                    },
+                    {
                         text: 'JavaScript',
-                        link: '/code/js/'
+                        link: '/code/js/getVideoSound',
+                        activeMatch: '^/code/js'
                     },
                     {
                         text: 'TypeScript',
-                        link: '/code/ts/'
-                    },
-                    {
-                        text: 'Java',
-                        link: '/code/java/'
+                        link: '/code/ts/typeChallenges',
+                        activeMatch: '^/code/ts'
                     },
                     {
                         text: 'Common',
-                        link: '/code/common/'
+                        link: '/code/common/git',
+                        activeMatch: '^/code/common'
                     }
                 ]
             },
         ],
         activeMatch: '^/code'
+    },
+    {
+        text: 'Site',
+        link: '/iframe/',
+        activeMatch: '/iframe/'
     },
     {
         text: 'csdn',
