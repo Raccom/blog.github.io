@@ -1,6 +1,4 @@
-# Port {#port}
-
-## window 解除占用端口
+# window 解除占用端口 {#port}
 
 1. 列出所有正在运行的端口：
 

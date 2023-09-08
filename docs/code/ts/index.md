@@ -1,8 +1,9 @@
 # {#type-challenges}
 
-<img src="/images/typeChallenge.svg" width="400" style="max-width: 100%;">
-
-类型挑战题解
+<div style='text-align: center'>
+  <img src="/images/typeChallenge.svg" width="400" style="max-width: 100%; margin: 0 auto;">
+  <span>类型挑战题解📖</span>
+</div>
 
 ## Medium 
 
@@ -634,7 +635,7 @@ type Maximum<T extends any[], U = never> = T extends [infer R, ...infer S]
 
 [➡️To TypeScript PlayGround](https://www.typescriptlang.org/zh/play?#code/PQKgUABBCcDssFYIFoIGECGAHAlgFwwBscAvAUwgDkyBnPCAeQCMArMgY3oGkyBPGyCmTCRgprwgBZDLwwA7ACJkAbhAAUAAWmy5AExUBKCAGIAFhgBOukwHtWHescsWZYQcY8QAigFdaeHBs5NyhMXAJicgg8UwoAaz4IGwAzaNik+04AGgh5axxUmIplIj8IHBpcuVyLF14c-DIXPAoYixsfAHNTNIo7Nk5KnGqimrqAOhCIAD4IADUcMgB3JOqAcXwACR8mAC4IUzw8LBpd4GA8GnZTcZYacZsLTuA4RDAQYDdQCAB9P-+Af8IABNDoWdA2fQQTZNCiA+F-CAfNx4XhYCgAVSw6IsmBoFAAvBAAN6CABEGDJ+zJAEEyeSmFSIGSAEL0qBk9hMslodnM3TchR8slkbkAUWFyW5ADFhZ1uWthaZuZthThuQBJYUsbkAKWFcW5XGFhG5ABlhQBbbmSYVybmUYU2bkMYVYbkABWFAEduV5hRZuQAlYU0bkAZWFeG5ABVhT5uRjhcpuXNhUtuQB1YUAD25AA1hbxucDhSRuQAtekAXxRaIoYXwRFIZAAPDHZkSYxAyDmWnpKgleCkIFicXiKAB+UfYpoTgDaMYAuhB9jG6+iIEoyFgwu2chie32yAOqrx50uiRfOxBu73+7pKvPhskmhAaTlxl+X2+gyvBNO267tgrbzl+4x-jkYFfhiOSNhELbUHQzADHgPD8K2NLTEu0yCGuR4Pk+S6CFA04YiRq63huDbYE2kRkEheAoQ46E0O2N6klA84euU1RDiO3YYJUPH3iej4QAABgAJMSP7gkG1YyXJEDhtWEkQNO0nEvBzbkK2QbTIpxKqep+weku+xAXuMbcThYC1mA3wIvCt7+OgQm0L8zkAkinw4JaWCPPQqKbsSEBit6PhEDkYo5uinAQNWEDJO0loQAA5BoIVkMg1xEIQJ6dLQwA+AEhA0OlYD+YFFj0GFsXxXg0pEPiOSUDYeARVFhCJclqUZVl9a5eYhAFXIRU0CVZUVdRyU2DYEBEpxc02PsdAWMMnRiJYpwQPOYXJPNa14Bt42JcRDnZRA0rzYtJKCDdq0QOtm2CCyO37PtFGPcdp1bVA1YXbN7AeZUV6CA1Ditl1RCto9cG0Qh5CMcxnCsa2h02NM2NZGAxGOSAXneYi0o+LVsTguGLQnETxO+QTgizOG5gWBQw5k89NiEKVgRyLthzHKc5yXNctz3I8zyvAgwDyDQSxNIz8yLCsNBczzQT80cJxnBcVw3HcDxPC88DS6r3MBBriuSI8DYjWNE37AL2vC3rYuG1tyJAA)
 
-```java
+```ts
 type UpperCase = {
   "a": "A"
   "b": "B"

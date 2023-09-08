@@ -61,53 +61,62 @@ javascript: void (function () {
 ::: details 模拟实现 new 运算符 
 <<< @/code/snippets/java/test.js 
 :::
+
 ```ts {2}
 javascript: void (function () {
     document.scrollingElement.scrollIntoView({ behavior: 'smooth' })
 })()
 ```
 
+
 ```js
 export default {
-  data () {
+  data() {
     return {
-      msg: 'Highlighted!' // [!code  hl]
+      msg: 'Error', // [!code error]
+      msg: 'Warning' // [!code warning]
     }
   }
 }
 ```
 
-```js
-export default {
-  data () {
-    return {
-      msg: 'Focused!' // [!code  focus]
-    }
-  }
-}
-```
 
 ```js
 export default {
   data () {
     return {
-      msg: 'Removed' // [!code  --]
-      msg: 'Added' // [!code  ++]
+      msg: 'Highlighted!' // [!code hl]
     }
   }
 }
 ```
 
+
 ```js
 export default {
   data () {
     return {
-      msg: 'Error', // [!code  error]
-      msg: 'Warning' // [!code  warning]
+      msg: 'Focused!' // [!code focus]
     }
   }
 }
 ```
+
+
+```js
+export default {
+  data () {
+    return {
+      msg: 'Removed' // [!code --]
+      msg: 'Added' // [!code ++]
+    }
+  }
+}
+```
+
+
+
+
 
 ```ts {1}
 // line-numbers is disabled by default

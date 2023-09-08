@@ -1,13 +1,18 @@
-# 视频中提取音频
+# 视频中提取音频🔊
 
-将视频中的音频轨道分离出来，生成 `wav` 文件播放或下载
+将视频中的音频轨道分离出来，生成 `wav` 文件播放或下载（ `Vue3 setup` ）
 
+1. `template`
 ```html
 <button>
     <label for="file" id="filename">选择视频文件</label>
     <input type="file" name="file" id="file" accept="video/*,audio/*" @change="fileChange">
 </button>
 ```
+
+---
+
+2. `scss`
 ```css
 button {
     position: absolute;
@@ -32,5 +37,10 @@ input[type=file] {
     cursor: pointer;
 }
 ```
-<<< @/code/snippets/js/getVideoSound.js
+
+---
+
+3. `setup`
+
+<<< @/code/snippets/js/getVideoSound.js{52-54,56-67}
 

@@ -5,7 +5,7 @@ interface RouterItem {
 
 const jsRouter: RouterItem[] = [
     {
-        name: 'index',
+        name: '视频提取音频',
         path: ''
     },
 ]

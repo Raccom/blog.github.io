@@ -1,5 +1,3 @@
-// setup js
-
 const fileChange = (e) => {
     const file = e.target.files[0]
     if (!file) return
@@ -50,16 +48,24 @@ const videoToAudio = async (file) => {
 
         const fileType = `wav`
         const fileName = `${file.name}.${fileType}`
+
+        // -----------下载音频文件---------------------
         downloadWav(wav, fileName)
-        // audioContext.decodeAudioData(wav, function (buffer) {
-        //     const source = audioContext.createBufferSource();
-        //     source.buffer = buffer;
-        //     source.connect(audioContext.destination);
-        //     source.start();
-        //     // 在这里继续下一步
-        // }, function (error) {
-        //     console.error('解码音频数据失败:', error);
-        // });
+        // ------------------------------------------
+
+         
+        // -----------播放音频文件---------------------
+        audioContext.decodeAudioData(wav, function (buffer) {
+            const source = audioContext.createBufferSource();
+            source.buffer = buffer;
+            source.connect(audioContext.destination);
+            source.start();
+            // 在这里继续下一步
+        }, function (error) {
+            console.error('解码音频数据失败:', error);
+        });
+        // ------------------------------------------
+       
         return {fileName, fileType, fileDuration}
     } catch (error) {
         // {code: 0, name: 'EncodingError', message: 'Unable to decode audio data'} Case：No audio in the video file ? Maybe

@@ -19,7 +19,7 @@ export default defineConfig({
     lastUpdated: true,
     /* markdown 配置 */
     markdown: {
-        lineNumbers: true,
+        lineNumbers: false,
     },
 
     themeConfig: {
