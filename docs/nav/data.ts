@@ -27,6 +27,12 @@ export const NAV_DATA: NavData[] = [
                 desc: 'ChatGPT 无需翻墙，不限次数',
                 link: 'http://124.220.104.235/web/chatgpt'
             },
+            {
+                icon: '/icons/robin.png',
+                title: '文心一言',
+                desc: '百度语言大模型',
+                link: 'http://124.220.104.235/web/chatgpt'
+            },
         ]
     },
     {

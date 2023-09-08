@@ -1,0 +1,28 @@
+.m-iframe-layout {
+    .content-container,
+    .content {
+        max-width: 100% !important;
+        min-height: 100vh;
+    }
+
+    .iframeContent{
+        width: 100%;
+        height: calc(100vh - 64px);
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    /* tip */
+    .tip {
+        .custom-block-title {
+            display: none;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}

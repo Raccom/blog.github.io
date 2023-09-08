@@ -4,6 +4,11 @@ import {javaPath, jsPath, tsPath, CommonPath} from './options'
 export const sidebar: DefaultTheme.Config['sidebar'] = {
     '/code': [
         {
+            text: 'Java',
+            collapsed: true,
+            items: javaPath
+        },
+        {
             text: 'JavaScript',
             collapsed: true,
             items: jsPath
@@ -12,11 +17,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             text: 'TypeScript',
             collapsed: true,
             items: tsPath
-        },
-        {
-            text: 'Java',
-            collapsed: true,
-            items: javaPath
         },
         {
             text: 'Common',

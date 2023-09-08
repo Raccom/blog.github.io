@@ -12,27 +12,27 @@ hero:
     alt: raccom
   actions:
     - text: Get Started
-      link: /code/js/
+      link: /code/java/
       theme: brand
     - text: Nav
       link: /nav/
       theme: alt
 features:
-  - icon: ⚡
-    title: Code
-    details: 开发使用的代码片段
+  - icon: ⚗
+    title: Feature
+    details: 开发使用的功能模块
     linkText: next
-    link: /code/js/
+    link: /code/java/
   - icon: 🔧
     title: Tools
     details: 整理日常使用的工具
-    linkText: use
+    linkText: to
     link: /nav/
-  - icon: 🐛
-    title: Bug
-    details: 疑难杂症偏方 (feature)
-    # linkText: fix
-    link: /
+  - icon: ⚡
+    title: Code
+    details: 高效的代码片段
+    linkText: use
+    link: /code/common/git
 ---
 
 <style lang="scss">
