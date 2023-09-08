@@ -2,6 +2,10 @@
 
 使用 `postcss-px-to-viewport` 将px单位转换为视口单位的 (vw, vh, vmin, vmax) 的 PostCSS 插件.
 
+```bash
+yarn add postcss-px-to-viewport-8-plugin
+```
+
 `https://github.com/evrone/postcss-px-to-viewport/blob/master/README_CN.md`
 
 ```js
