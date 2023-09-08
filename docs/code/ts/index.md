@@ -1,4 +1,4 @@
-# {#type-challenges}
+# {#typeChallenges}
 
 <div style='text-align: center'>
   <img src="/images/typeChallenge.svg" width="400" style="max-width: 100%; margin: 0 auto;">
