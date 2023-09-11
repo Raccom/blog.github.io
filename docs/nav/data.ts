@@ -31,7 +31,7 @@ export const NAV_DATA: NavData[] = [
                 icon: '/icons/robin.png',
                 title: '文心一言',
                 desc: '百度语言大模型',
-                link: 'http://124.220.104.235/web/chatgpt'
+                link: 'https://yiyan.baidu.com/'
             },
         ]
     },
