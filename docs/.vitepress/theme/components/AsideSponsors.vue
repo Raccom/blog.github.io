@@ -60,7 +60,7 @@ const data = [
           <p class="extra-info">Update soon!</p>
         </span>
     </a>
-    <VPDocAsideSponsors :data="data"/>
+    <VPDocAsideSponsors :data="data" v-if="data"/>
 </template>
 
 <style>
@@ -102,8 +102,7 @@ const data = [
 .notice .heading {
     background-image: linear-gradient(
         120deg,
-        #c50b17 16%,
-        #505050
+        rgba(251,0,0,1) 0%, rgba(197,11,23,1) 36%, rgba(80,80,80,1) 78%
     );
     background-clip: text;
     -webkit-background-clip: text;
