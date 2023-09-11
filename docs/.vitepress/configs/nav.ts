@@ -20,7 +20,7 @@ export const nav: DefaultTheme.Config['nav'] = [
                     },
                     {
                         text: 'JavaScript',
-                        link: '/code/js/getVideoSound',
+                        link: '/code/js/postcss',
                         activeMatch: '^/code/js'
                     },
                     {

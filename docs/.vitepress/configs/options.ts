@@ -5,14 +5,6 @@ interface RouterItem {
 
 const jsRouter: RouterItem[] = [
     {
-        name: '视频提取音频',
-        path: 'getVideoSound'
-    },
-    {
-        name: '视频去除绿幕背景',
-        path: 'removeVideoBg'
-    },
-    {
         name: '移动端自适应',
         path: 'postcss'
     }
