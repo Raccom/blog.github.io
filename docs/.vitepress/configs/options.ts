@@ -9,6 +9,10 @@ const jsRouter: RouterItem[] = [
         path: 'getVideoSound'
     },
     {
+        name: '视频去除绿幕背景',
+        path: 'removeVideoBg'
+    },
+    {
         name: '移动端自适应',
         path: 'postcss'
     }

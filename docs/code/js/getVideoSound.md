@@ -1,6 +1,8 @@
-# 视频中提取音频🔊{#getVideoSound}
+# 视频提取音频 🔊{#getVideoSound}
 
-将视频中的音频轨道分离出来，生成 `wav` 文件播放或下载（ `Vue3 setup` ）
+将视频中的音频轨道分离出来，生成 `wav` 文件播放或下载
+
+## 代码实现（ `Vue3 setup` ）
 
 1. `template`
 ```html
