@@ -13,8 +13,8 @@ const jsRouter: RouterItem[] = [
         path: 'postcss'
     },
     {
-        name: 'Doc',
-        path: 'doc'
+        name: 'DOM 文档',
+        path: 'dom'
     },
 ]
 
