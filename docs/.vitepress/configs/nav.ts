@@ -20,7 +20,7 @@ export const nav: DefaultTheme.Config['nav'] = [
                     },
                     {
                         text: 'JavaScript',
-                        link: '/code/js/postcss',
+                        link: '/code/js/viteConfig',
                         activeMatch: '^/code/js'
                     },
                     {

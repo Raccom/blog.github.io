@@ -5,9 +5,13 @@ interface RouterItem {
 
 const jsRouter: RouterItem[] = [
     {
+        name: 'Vite 配置文件',
+        path: 'viteConfig'
+    },
+    {
         name: '移动端自适应',
         path: 'postcss'
-    }
+    }  
 ]
 
 const tsRouter: RouterItem[] = [
@@ -26,7 +30,7 @@ const javaRouter: RouterItem[] = [
 
 const CommonRouter: RouterItem[] = [
     {
-        name: 'Git 命令',
+        name: 'Git',
         path: 'git'
     },
     {

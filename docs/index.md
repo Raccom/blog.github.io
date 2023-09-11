@@ -18,21 +18,21 @@ hero:
       link: /nav/
       theme: alt
 features:
-  - icon: ⚗
-    title: Feature
-    details: 开发使用的功能模块
-    linkText: next
-    link: /code/java/first
-  - icon: 🔧
-    title: Tools
-    details: 整理日常使用的工具
-    linkText: to
-    link: /nav/
   - icon: ⚡
     title: Code
     details: 高效的代码片段
     linkText: use
     link: /code/common/git
+  - icon: 🛠
+    title: Tools
+    details: 整理日常使用的工具
+    linkText: to
+    link: /nav/
+  - icon: ⚙
+    title: Feature
+    details: 开发使用的配置文件
+    linkText: next
+    link: /code/js/viteConfig
 ---
 
 <style lang="scss">
