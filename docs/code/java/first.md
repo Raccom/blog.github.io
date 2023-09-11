@@ -124,7 +124,7 @@ const line2 = 'This is line 2'
 const line3 = 'This is line 3'
 ```
 
-```ts:line-numbers {1}
+```ts:line-numbers=2 {1}
 // line-numbers is enabled
 const line2 = 'This is line 2'
 const line3 = 'This is line 3'
