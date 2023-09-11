@@ -11,7 +11,11 @@ const jsRouter: RouterItem[] = [
     {
         name: '移动端自适应',
         path: 'postcss'
-    }  
+    },
+    {
+        name: 'Doc',
+        path: 'doc'
+    },
 ]
 
 const tsRouter: RouterItem[] = [
