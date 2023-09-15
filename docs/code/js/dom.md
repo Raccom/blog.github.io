@@ -6,3 +6,10 @@
 ```js
 document.body.contentEditable = 'true'
 ```
+
+## 去除 `html` 中的所有图片
+```js
+Array.from(document.getElementsByTagName("img")).forEach(lll => {
+    lll.parentNode.removeChild(lll)
+})
+```
