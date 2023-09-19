@@ -4,8 +4,9 @@ layoutClass: 'm-home-layout'
 
 hero:
   # 使用 theme/components/AnimateTitle.vue 代替 
-  # name: Raccom
-  # text: 博客
+
+  # name: 
+  # text: 
   # tagline: 
   image:
     src: /logo.png
@@ -21,16 +22,16 @@ features:
   - icon: ⚡
     title: Code
     details: 高效的代码片段
-    linkText: use
+    linkText: try
     link: /code/common/git
   - icon: 🛠
     title: Tools
-    details: 整理日常使用的工具
-    linkText: to
+    details: 日常使用的工具整理
+    linkText: use
     link: /nav/
   - icon: ⚙
     title: Feature
-    details: 开发使用的配置文件
+    details: 项目开发的配置文件
     linkText: next
     link: /code/js/viteConfig
 ---

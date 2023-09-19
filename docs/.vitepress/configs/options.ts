@@ -41,6 +41,10 @@ const CommonRouter: RouterItem[] = [
         name: '解除占用端口',
         path: 'port'
     },
+    {
+        name: 'Linux 打包脚本',
+        path: 'ci'
+    }
 ]
 
 const cosName: RouterItem[] = [

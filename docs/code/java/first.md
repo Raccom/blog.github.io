@@ -9,7 +9,7 @@ outline: [1, 2]
 
 # java
 
-## index
+## vitepress组件
 
 
 ### Title <Badge type="info" text="default" />

@@ -3,6 +3,7 @@ import {javaPath, jsPath, tsPath, CommonPath} from './options'
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
     '/code/': {
+        base: '/code/',
         items: [
             {
                 text: 'Java',

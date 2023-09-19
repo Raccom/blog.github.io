@@ -1,7 +1,7 @@
 {
     "name": "raccom",
     "version": "1.0.0",
-    "description": "开发工具集",
+    "description": "dev tools",
     "private": true,
     "type": "module",
     "scripts": {

@@ -4,7 +4,7 @@
     <h1 class="name">
         <span class="clip">Raccom's</span>
     </h1>
-    <p class="text">Utils Lib</p>
+    <p class="text">Dev Utils</p>
     <p class="tagline">Cold Winter Has Arrived</p>
 </template>
 
