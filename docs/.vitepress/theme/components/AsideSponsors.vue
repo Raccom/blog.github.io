@@ -6,16 +6,6 @@ const data = [
     {
         items: [
             {
-                name: 'java',
-                url: 'https://www.compilejava.net/',
-                img: '/spon/java.svg',
-            },
-        ],
-        // size: 'mini'
-    },
-    {
-        items: [
-            {
                 name: 'typescript',
                 url: 'https://www.typescriptlang.org/zh/play',
                 img: '/spon/ts.svg',
@@ -26,9 +16,9 @@ const data = [
     {
         items: [
             {
-                name: 'vue3',
-                url: 'https://play.vuejs.org',
-                img: '/spon/vue.svg',
+                name: 'java',
+                url: 'https://www.compilejava.net/',
+                img: '/spon/javaCode.png',
             },
             {
                 name: 'emoji',
@@ -53,7 +43,7 @@ const data = [
 
 <template>
     <a class="notice" href="/" target="_blank">
-        <img width="22" height="22" src="/spon/javaCode.png"/>
+        <img width="22" height="22" src="/spon/java.png"/>
         <span>
           <p class="extra-info">Learning & Organizing</p>
           <p class="heading">Java and Sql</p>
@@ -85,7 +75,7 @@ const data = [
 }
 
 .notice:hover {
-    border: 2px solid #c50b17;
+    border: 2px solid var(--vp-c-slate-1);
 }
 
 .notice img {
@@ -102,7 +92,7 @@ const data = [
 .notice .heading {
     background-image: linear-gradient(
         120deg,
-        rgba(251,0,0,1) 0%, rgba(197,11,23,1) 36%, rgba(80,80,80,1) 78%
+        #557796 0%, var(--vp-c-slate-1) 36%, rgba(80,80,80,1) 78%
     );
     background-clip: text;
     -webkit-background-clip: text;
