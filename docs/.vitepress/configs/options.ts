@@ -9,6 +9,18 @@ const jsRouter: RouterItem[] = [
         path: 'viteConfig'
     },
     {
+        name: 'ffmpeg 截取视频',
+        path: 'videoCut'
+    },
+    {
+        name: '视频绿幕背景去除',
+        path: 'videoRemove'
+    },
+    {
+        name: '视频提取音频',
+        path: 'videoSound'
+    },
+    {
         name: '移动端自适应',
         path: 'postcss'
     },

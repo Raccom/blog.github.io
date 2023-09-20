@@ -30,4 +30,3 @@ npm i terser
 ```
 
 :::
-

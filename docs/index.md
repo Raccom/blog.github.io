@@ -19,12 +19,12 @@ hero:
       link: /nav/
       theme: alt
 features:
-  - icon: ⚡
+  - icon: 📦
     title: Code
-    details: 高效的代码片段
+    details: 开箱即用的代码片段
     linkText: try
     link: /code/common/git
-  - icon: 🛠
+  - icon: 🧰
     title: Tools
     details: 日常使用的工具整理
     linkText: use
