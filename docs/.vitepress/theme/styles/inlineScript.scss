@@ -1,13 +1,14 @@
 .demo {
     padding: 22px 24px;
     border-radius: 8px;
-    box-shadow: var(--vt-shadow-2);
+    box-shadow: var(--vp-shadow-2);
     margin-bottom: 1.2em;
     transition: background-color 0.5s ease;
+    background-color: var(--vp-c-bg-alt);
 }
 
 .dark .demo {
-    background-color: var(--vt-c-bg-soft);
+    background-color: var(--vp-c-bg-alt);
 }
 
 .demo p {
@@ -15,10 +16,10 @@
 }
 
 .demo button {
-    background-color: var(--vt-c-bg-mute);
+    background-color: transparent;
     transition: background-color 0.5s;
     padding: 5px 12px;
-    border: 1px solid var(--vt-c-divider);
+    border: 1px solid var(--vp-c-default-3);
     border-radius: 8px;
     font-size: 0.9em;
     font-weight: 600;
@@ -31,7 +32,7 @@
 .demo input,
 .demo textarea,
 .demo select {
-    border: 1px solid var(--vt-c-divider);
+    border: 1px solid var(--vp-c-default-3);
     border-radius: 4px;
     padding: 0.2em 0.6em;
     margin-top: 10px;
@@ -40,7 +41,7 @@
 }
 
 .dark .demo select {
-    background: var(--vt-c-bg-soft);
+    background: transparent;
 }
 
 .dark .demo select option {
