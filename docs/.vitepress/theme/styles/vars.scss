@@ -131,6 +131,10 @@
         background-color: transparent;
     }
 
+    #app .VPNav #local-search, .VPNav .DocSearch {
+        background-color: var(--vp-c-bg);
+    }
+
     .VPHome .VPHomeHero {
         padding-bottom: 120px;
     }
