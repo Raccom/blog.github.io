@@ -4,6 +4,11 @@ outline: [1, 2]
 ---
 
 <script setup>
+  import {ref} from 'vue';
+  const test = ref(1);
+  const c = () => {
+    test.value++
+  }
 </script>
 <style lang='scss'></style>
 
@@ -16,6 +21,14 @@ outline: [1, 2]
 ### Title <Badge type="tip" text="^1.9.0" />
 ### Title <Badge type="warning" text="beta" />
 ### Title <Badge type="danger" text="caution" />
+
+```vue-html
+<div>123<div>
+```
+<div class="demo">
+{{test}}
+<button @click="c">+</button>
+</div>
 
 ```diff
 -VITE_APP=ab#cd`ef
