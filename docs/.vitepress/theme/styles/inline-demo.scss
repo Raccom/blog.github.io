@@ -19,7 +19,7 @@
     background-color: transparent;
     transition: background-color 0.5s;
     padding: 5px 12px;
-    border: 1px solid var(--vp-c-default-3);
+    border: 1px solid var(--vp-c-border);
     border-radius: 8px;
     font-size: 0.9em;
     font-weight: 600;
@@ -32,7 +32,7 @@
 .demo input,
 .demo textarea,
 .demo select {
-    border: 1px solid var(--vp-c-default-3);
+    border: 1px solid var(--vp-c-border);
     border-radius: 4px;
     padding: 0.2em 0.6em;
     margin-top: 10px;
