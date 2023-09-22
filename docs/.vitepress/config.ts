@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
-import { head, nav, sidebar } from './configs'
+import { head, nav, sidebar } from './configs';
+import { fileURLToPath, URL } from 'node:url';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
@@ -22,17 +23,24 @@ export default defineConfig({
         lineNumbers: false,
     },
 
-    /*
-        // vite配置
-        vite: {
-            server: {
-                host: "0.0.0.0",
-                port: 5173,
-                strictPort: false, //设为true时端口被占用则直接退出，不会尝试下一个可用端口
-                hmr: false,//禁用或配置 HMR 连接
-            }
+    vite: {
+        server: {
+            host: "0.0.0.0",
+            port: 5173,
+            strictPort: false, //设为true时端口被占用则直接退出，不会尝试下一个可用端口
+            hmr: false,//禁用或配置 HMR 连接
         },
-    */
+        resolve: {
+            alias: [
+                {
+                    find: /^.*\/VPSwitchAppearance\.vue$/,
+                    replacement: fileURLToPath(
+                        new URL('./theme/components/SwitchAppearance.vue', import.meta.url),
+                    ),
+                },
+            ],
+        },
+    },
 
     themeConfig: {
         // 导航栏
