@@ -23,13 +23,18 @@ npm install @ffmpeg/core@^0.10.0
 
 ## 在线视频url剪辑
 
+:::details Source
 <<< @/code/snippets/js/videoCutOnline.vue {36-43}
-
+:::
 
 ## 本地视频文件剪辑
-<<< @/code/snippets/js/videoCutLocal.vue {42-49}
 
+:::details Source
+<<< @/code/snippets/js/videoCutLocal.vue {42-49}
+:::
 
 ## 获取视频画面截图
 
+:::details Source
 <<< @/code/snippets/js/videoShotLocal.vue {43-51}
+:::

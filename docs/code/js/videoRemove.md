@@ -1,3 +1,12 @@
+<script setup>
+    import {ref} from 'vue';
+    import VideoRemove from '/code/snippets/js/videoRemove.vue';
+    import VideoRemovePlus from '/code/snippets/js/videoRemovePlus.vue';
+
+    const showVideo = ref(false);
+    const showVideoPlus = ref(false);
+</script>
+
 # 视频去除绿幕背景 🎞{#videoRemove}
 
 首先使用canvas的 `drawImage` 方法将video的当前帧画面绘制到canvas中，
@@ -19,109 +28,26 @@
 由于uniapp中的canvas经过封装，且 uniapp 的 `drawImage` 无法绘制 `video` 标签内容，因此uniapp中不适用。
 :::
 
-## 本地部署
+## 处理效果
 
-因为canvas会受到跨域的影响导致画布污染，因此首先需要将 [测试视频](repo.bfw.wiki/bfwrepo/video/63e1dd7ddd2b0.mp4) 下载到本地。
+<div class="demo videoRemove">
+    <button v-if="!showVideo" @click="showVideo=true">show Result</button>
+    <VideoRemove v-if="showVideo"/>
+    <div class='desc' v-if="showVideo">
+        <p>⚠可以看到边缘仍有绿幕像素闪烁(暗色主题下更明显)。</p>
+        <p>使用算法进行处理效果更好，但相应的资源的消耗也会提升，造成帧率下降。</p>
+    </div>
+</div>
 
-如果直接本地打开 `html` 的话同样会因为本地路径报跨域错误，
-
-需要将 `html`，`js`，测试视频放在文件夹中部署一个本地服务器。
-
-:::details 部署
-使用 `npm` 库 `http-server` 进行本地部署
-
-```bash
-npm i http-server -g
-```
-
-切换到存放`html`，`js`，测试视频的文件夹，运行命令即可部署本地服务器
-
-```bash
-http-server
-```
+:::tip 跨域问题
+因为canvas会受到跨域的影响导致画布污染，因此首先需要将 [测试视频](http://repo.bfw.wiki/bfwrepo/video/63e1dd7ddd2b0.mp4) 下载到本地。
 :::
 
-## 代码实现
-
-1. `html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style>
-        video{
-            width: 480px;
-            height: 270px;
-        }
-    </style>
-  </head>
-
-  <body>
-    <video id="video"  src="./63e1dd7ddd2b0.mp4"  loop autoplay muted></video>
-    <canvas id="output-canvas" width="480" height="270" willReadFrequently="true"></canvas>
-    <script type="text/javascript" src="processor2.js"></script>
-  </body>
-</html>
-```
-
-2. `processor2.js`
-```js
-let video, canvas, ctx, canvas_tmp, ctx_tmp;
-
-function init () {
-    video = document.getElementById('video');
-    canvas = document.getElementById('output-canvas');
-    ctx = canvas.getContext('2d');
-    
-	// 创建的canvas宽高最好与显示图片的canvas、video宽高一致
-    canvas_tmp = document.createElement('canvas');
-    canvas_tmp.setAttribute('width', 480);
-    canvas_tmp.setAttribute('height', 270);
-    ctx_tmp = canvas_tmp.getContext('2d');
-
-    video.addEventListener('play', computeFrame);
-}
-
-function computeFrame () {
-    if (video) {
-        if (video.paused || video.ended) return;
-    }
-    // 如果视频比例和canvas比例不正确可能会出现显示形变， 调整除的值进行比例调整
-    ctx_tmp.drawImage(video, 0, 0, video.clientWidth / 1, video.clientHeight / 1);
-
-	// 获取到绘制的canvas的所有像素rgba值组成的数组
-    let frame = ctx_tmp.getImageData(0, 0, video.clientWidth, video.clientHeight);
-
-	// 共有多少像素点
-    const pointLens = frame.data.length / 4;
-
-    for (let i = 0; i < pointLens; i++) {
-        let r = frame.data[i * 4];
-        let g = frame.data[i * 4 + 1];
-        let b = frame.data[i * 4 + 2];
-        
-        // 判断如果rgb值在这个范围内则是绿幕背景，设置alpha值为0 
-        // 同理不同颜色的背景调整rgb的判断范围即可
-        if (r < 100 && g > 120 && b < 200) {
-            frame.data[i * 4 + 3] = 0;
-        }
-    }
-    
-    // 重新绘制到canvas中显示
-    ctx.putImageData(frame, 0, 0);
-    // 递归调用
-    setTimeout(computeFrame, 0);
-}
+:::details Source
+<<< @/code/snippets/js/videoRemove.vue
+:::
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    init();
-});
-```
-
-使用本地服务器访问html即可看到效果，可以看到边缘仍有绿幕像素闪烁，
-
-使用算法进行处理效果更好，但相应的资源的消耗也会提升，造成帧率下降。
 
 ## 优化
 
@@ -161,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 计算完之后把结果赋给 `x` 的 `alpha` 值。
 
-:::warning 注意
+:::tip 提示
 由于遍历时 前一个像素的修改 会影响 后一个像素获取周围的值。
 
 ```
@@ -184,113 +110,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-### 代码实现（优化）
-```js
-// 新增羽化和颜色过渡
+## 处理效果（优化）
+<div class="demo videoRemove">
+    <button v-if="!showVideoPlus" @click="showVideoPlus=true">show Result</button>
+    <VideoRemovePlus v-if="showVideoPlus"/>
+</div>
 
-// processor2.js
-let video, canvas, ctx, canvas_tmp, ctx_tmp;
+:::details Source
+<<< @/code/snippets/js/videoRemovePlus.vue
+:::
 
-function init () {
-    video = document.getElementById('video');
-    canvas = document.getElementById('output-canvas');
-    ctx = canvas.getContext('2d');
-    
-	// 创建的canvas宽高最好与显示图片的canvas、video宽高一致
-    canvas_tmp = document.createElement('canvas');
-    canvas_tmp.setAttribute('width', 480);
-    canvas_tmp.setAttribute('height', 270);
-    ctx_tmp = canvas_tmp.getContext('2d');
+<style lang='scss'>
+    .videoRemove{
+        .videoBgRemove{
+            display: flex;
+            justify-content: center;
+        }
 
-    video.addEventListener('play', computeFrame);
-}
-
-
-function numToPoint (num, width) {
-    let col = num % width;
-    let row = Math.floor(num / width);
-    row = col === 0 ? row : row + 1;
-    col = col === 0 ? width : col;
-    return [row, col];
-}
-
-function pointToNum (point, width) {
-    let [row, col] = point;
-    return (row - 1) * width + col
-}
-
-function getAroundPoint (point, width, height, area) {
-    let [row, col] = point;
-    let allAround = [];
-    if (row > height || col > width || row < 0 || col < 0) return allAround;
-    for (let i = 0; i < area; i++) {
-        let pRow = row - 1 + i;
-        for (let j = 0; j < area; j++) {
-            let pCol = col - 1 + j;
-            if (i === area % 2 && j === area % 2) continue;
-            allAround.push([pRow, pCol]);
+        .desc{
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 16px
         }
     }
-    return allAround.filter(([iRow, iCol]) => {
-        return (iRow > 0 && iCol > 0) && (iRow <= height && iCol <= width);
-    })
-}
-
-function computeFrame () {
-    if (video) {
-        if (video.paused || video.ended) return;
-    }
-    ctx_tmp.drawImage(video, 0, 0, video.clientWidth, video.clientHeight);
-    let frame = ctx_tmp.getImageData(0, 0, video.clientWidth, video.clientHeight);
-
-    //----- emergence ----------
-    const height = frame.height;
-    const width = frame.width;
-    const pointLens = frame.data.length / 4;
-
-
-    for (let i = 0; i < pointLens; i++) {
-        let r = frame.data[i * 4];
-        let g = frame.data[i * 4 + 1];
-        let b = frame.data[i * 4 + 2];
-        if (r < 150 && g > 200 && b < 150) {
-            frame.data[i * 4 + 3] = 0;
-        }
-    }
-
-    const tempData = [...frame.data]
-    for (let i = 0; i < pointLens; i++) {
-        if (frame.data[i * 4 + 3] === 0) continue
-        const currentPoint = numToPoint(i + 1, width);
-        const arroundPoint = getAroundPoint(currentPoint, width, height, 3);
-        let opNum = 0;
-        let rSum = 0;
-        let gSum = 0;
-        let bSum = 0;
-        arroundPoint.forEach((position) => {
-            const index = pointToNum(position, width);
-            rSum = rSum + tempData[(index - 1) * 4];
-            gSum = gSum + tempData[(index - 1) * 4 + 1];
-            bSum = bSum + tempData[(index - 1) * 4 + 2];
-            if (tempData[(index - 1) * 4 + 3] !== 255) opNum++;
-        })
-        let alpha = (255 / arroundPoint.length) * (arroundPoint.length - opNum);
-        if (alpha !== 255) {
-            // debugger
-            frame.data[i * 4] = parseInt(rSum / arroundPoint.length);
-            frame.data[i * 4 + 1] = parseInt(gSum / arroundPoint.length);
-            frame.data[i * 4 + 2] = parseInt(bSum / arroundPoint.length);
-            frame.data[i * 4 + 3] = parseInt(alpha);
-        }
-    }
-
-    //------------------------
-    ctx.putImageData(frame, 0, 0);
-    setTimeout(computeFrame, 0);
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    init();
-});
-```
+</style>

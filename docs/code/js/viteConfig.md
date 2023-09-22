@@ -13,10 +13,10 @@ git clone https://github.com/Raccom/viteTemplate.git
 
 ## vite 配置
 
-:::details vite.config.js
+:::info vite.config.js
 <<< @/code/snippets/js/viteConfig.js{77}
 
-:::tip
+:::tip 提示
 由于新版的vite已经不携带 `terser`，因此需要额外安装。
 
 :::code-group
