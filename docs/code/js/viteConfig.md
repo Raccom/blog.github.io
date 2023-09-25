@@ -7,9 +7,16 @@
 - 🛡 Axios 拦截封装
 - 💥 ElementUI 组件自动导入
 
-```bash
+:::code-group
+
+```bash [ssh]
+git clone git@github.com:Raccom/viteTemplate.git
+```
+
+```bash [https]
 git clone https://github.com/Raccom/viteTemplate.git
 ```
+:::
 
 ## vite 配置
 
