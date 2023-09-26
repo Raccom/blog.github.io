@@ -39,11 +39,3 @@ Array.from(document.getElementsByTagName("img")).forEach(lll => {
     lll.parentNode.removeChild(lll)
 })
 ```
-<style lang='scss'>
-    .dinoIframe{
-        width: 100%;
-        .pc, .iframeContent{
-            width: 100%;
-        }
-    }
-</style>
