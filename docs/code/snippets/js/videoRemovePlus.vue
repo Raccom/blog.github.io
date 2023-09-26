@@ -1,6 +1,6 @@
 <template>
     <div class="videoBgRemove">
-        <video id="video" src="/images/example.mp4" loop autoplay muted ref="video" style="width: 240px;height: 135px;"></video>
+        <video id="video" src="/images/js/example.mp4" loop autoplay muted ref="video" style="width: 240px;height: 135px;"></video>
         <canvas id="output-canvas" width="240" height="135" willReadFrequently="true" ref="canvas"></canvas>
     </div>
 </template>

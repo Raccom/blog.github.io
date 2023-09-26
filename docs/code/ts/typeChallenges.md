@@ -1,7 +1,7 @@
 # {#typeChallenges}
 
 <div style='text-align: center'>
-  <img src="/images/typeChallenge.svg" width="400" style="max-width: 100%; margin: 0 auto;">
+  <img src="/images/ts/typeChallenge.svg" width="400" style="max-width: 100%; margin: 0 auto;">
   <span>类型挑战题解📖</span>
 </div>
 

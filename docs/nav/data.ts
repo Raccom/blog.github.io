@@ -57,7 +57,7 @@ export const NAV_DATA: NavData[] = [
         items: [
             {
                 icon: '/icons/browser.svg',
-                title: 'Chorme',
+                title: 'Chrome',
                 desc: '浏览器工作原理与实践',
                 link: 'https://blog.poetries.top/browser-working-principle/guide/part1/lesson01.html'
             },

@@ -3,6 +3,8 @@
     import VideoRemove from '/code/snippets/js/videoRemove.vue';
     import VideoRemovePlus from '/code/snippets/js/videoRemovePlus.vue';
 
+    const isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+        
     const showVideo = ref(false);
     const showVideoPlus = ref(false);
 </script>
@@ -31,11 +33,18 @@
 ## 处理效果
 
 <div class="demo videoRemove">
-    <button v-if="!showVideo" @click="showVideo=true">show Result</button>
-    <VideoRemove v-if="showVideo"/>
-    <div class='desc' v-if="showVideo">
-        <p>⚠可以看到边缘仍有绿幕像素闪烁(暗色主题下更明显)。</p>
-        <p>使用算法进行处理效果更好，但相应的资源的消耗也会提升，造成帧率下降。</p>
+    <div class='pc' v-if='!isMobile'>
+        <button v-if="!showVideo" @click="showVideo=true">show Result</button>
+        <VideoRemove v-if="showVideo"/>
+        <div class='desc' v-if="showVideo">
+            <p>⚠可以看到边缘仍有绿幕像素闪烁(暗色主题下更明显)。</p>
+            <p>使用算法进行处理效果更好，但相应的资源的消耗也会提升，造成帧率下降。</p>
+        </div>
+    </div>
+    <div class='mobile' v-else>
+        <div class='desc'>
+            <p>⚠请在pc端查看效果</p>
+        </div>
     </div>
 </div>
 
@@ -112,8 +121,15 @@
 
 ## 处理效果（优化）
 <div class="demo videoRemove">
-    <button v-if="!showVideoPlus" @click="showVideoPlus=true">show Result</button>
-    <VideoRemovePlus v-if="showVideoPlus"/>
+    <div class='pc' v-if='!isMobile'>
+        <button v-if="!showVideoPlus" @click="showVideoPlus=true">show Result</button>
+        <VideoRemovePlus v-if="showVideoPlus"/>
+    </div>
+    <div class='mobile' v-else>
+        <div class='desc'>
+            <p>⚠请在pc端查看效果</p>
+        </div>
+    </div>
 </div>
 
 :::details Source
@@ -125,12 +141,12 @@
         .videoBgRemove{
             display: flex;
             justify-content: center;
+            margin-bottom: 16px;
         }
 
         .desc{
             font-size: 12px;
             line-height: 14px;
-            margin-top: 16px
         }
     }
 </style>
