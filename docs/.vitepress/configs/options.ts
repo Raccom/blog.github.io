@@ -26,7 +26,7 @@ const jsRouter: RouterItem[] = [
     },
     {
         name: '浏览器',
-        path: 'Browser'
+        path: 'browser'
     },
 ]
 

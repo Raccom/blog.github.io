@@ -123,7 +123,7 @@
 <div class="demo videoRemove">
     <div class='pc' v-if='!isMobile'>
         <button v-if="!showVideoPlus" @click="showVideoPlus=true">show Result</button>
-        <VideoRemovePlus v-if="showVideoPlus"/>
+        <VideoRemovePlus v-if="showVideoPlus" />
     </div>
     <div class='mobile' v-else>
         <div class='desc'>
