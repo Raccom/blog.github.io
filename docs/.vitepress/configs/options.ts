@@ -50,7 +50,7 @@ const CommonRouter: RouterItem[] = [
         path: 'git'
     },
     {
-        name: '解除占用端口',
+        name: 'window 端口命令',
         path: 'port'
     },
     {
