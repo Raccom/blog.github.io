@@ -13,7 +13,7 @@ hero:
     alt: raccom
   actions:
     - text: Get Started
-      link: /code/java/first
+      link: /code/java/note
       theme: brand
     - text: Nav
       link: /nav/

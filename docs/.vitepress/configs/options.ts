@@ -39,8 +39,16 @@ const tsRouter: RouterItem[] = [
 
 const javaRouter: RouterItem[] = [
     {
-        name: 'first',
-        path: 'first'
+        name: '笔记',
+        path: 'note'
+    },
+    {
+        name: 'SQL 语句',
+        path: 'sql'
+    },
+    {
+        name: '知识点',
+        path: 'point'
     },
 ]
 

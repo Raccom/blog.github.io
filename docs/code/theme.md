@@ -13,9 +13,9 @@ outline: [1, 2]
 </script>
 <style lang='scss'></style>
 
-# java
 
-## vitepress组件
+
+# 组件
 
 
 ### Title <Badge type="info" text="default" />
