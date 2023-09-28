@@ -77,13 +77,11 @@
 
     /* hero avatar transtion */
     --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
-            #bd34fe 30%,
-            #41d1ff);
+    --vp-home-hero-name-background: -webkit-linear-gradient(315deg,
+            #557796 0%, #253347 100%);
 
     --vp-home-hero-image-background-image: linear-gradient(-45deg,
-            #bd34fe 50%,
-            #47caff 50%);
+            #a3bded 50%, #7c9dc7 50%);
     --vp-home-hero-image-filter: blur(40px);
 }
 
@@ -131,7 +129,8 @@
         background-color: transparent;
     }
 
-    #app .VPNav #local-search, .VPNav .DocSearch {
+    #app .VPNav #local-search,
+    .VPNav .DocSearch {
         background-color: transparent;
     }
 

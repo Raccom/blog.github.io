@@ -25,7 +25,7 @@ export default defineConfig({
 
     vite: {
         server: {
-            host: "0.0.0.0",
+            // host: "0.0.0.0",
             port: 5173,
             strictPort: false, //设为true时端口被占用则直接退出，不会尝试下一个可用端口
             hmr: false,//禁用或配置 HMR 连接

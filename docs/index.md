@@ -3,11 +3,9 @@ layout: home
 layoutClass: 'm-home-layout'
 
 hero:
-  # 使用 theme/components/AnimateTitle.vue 代替 
-
-  # name: 
-  # text: 
-  # tagline: 
+  name: Raccom's
+  text: Dev Utils
+  tagline: Cold Winter Has Arrived
   image:
     src: /logo.png
     alt: raccom
@@ -40,11 +38,10 @@ features:
 .m-home-layout .image-src{
     opacity: 0.9;
     transition: .3s;
-}
-.m-home-layout .image-src:hover {
-    opacity: 1;
+    &:hover {
+        opacity: 1;
+    }
 }
 </style>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>

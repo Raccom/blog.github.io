@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {VPDocAsideSponsors} from 'vitepress/theme'
+import { VPDocAsideSponsors } from 'vitepress/theme'
 
 const data = [
     // size: big xmini mini
@@ -23,7 +23,7 @@ const data = [
             {
                 name: 'emoji',
                 url: 'https://www.emojiall.com/zh-hans',
-                img: '/spon/ghost.png' 
+                img: '/spon/ghost.png'
             },
         ],
         size: 'xmini'
@@ -43,14 +43,14 @@ const data = [
 
 <template>
     <a class="notice" href="/" target="_blank">
-        <img width="22" height="22" src="/spon/java.png"/>
+        <img width="22" height="22" src="/spon/java.png" />
         <span>
-          <p class="extra-info">Learning & Organizing</p>
-          <p class="heading">Java and Sql</p>
-          <p class="extra-info">Update soon!</p>
+            <p class="extra-info">Learning & Organizing</p>
+            <p class="heading">Java and Sql</p>
+            <p class="extra-info">Update soon!</p>
         </span>
     </a>
-    <VPDocAsideSponsors :data="data" v-if="data"/>
+    <VPDocAsideSponsors :data="data" v-if="data" />
 </template>
 
 <style>
@@ -90,10 +90,8 @@ const data = [
 }
 
 .notice .heading {
-    background-image: linear-gradient(
-        120deg,
-        #557796 0%, var(--vp-c-slate-1) 36%, rgba(80,80,80,1) 78%
-    );
+    background-image: linear-gradient(120deg,
+            #557796 0%, var(--vp-c-slate-1) 36%, #505050 78%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

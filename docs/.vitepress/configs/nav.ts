@@ -15,7 +15,7 @@ export const nav: DefaultTheme.Config['nav'] = [
                 items: [
                     {
                         text: 'Java',
-                        link: '/code/java/first',
+                        link: '/code/java/note',
                         activeMatch: '^/code/java'
                     },
                     {
@@ -50,5 +50,9 @@ export const nav: DefaultTheme.Config['nav'] = [
     {
         text: 'Cos',
         items: cosPath,
+    },
+    {
+        text: 'Component',
+        link: '/code/theme',
     },
 ]

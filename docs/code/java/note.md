@@ -1,6 +1,13 @@
 # 笔记 {#note}
 
 
+## 优先级
+
+```java
+// 因为在 Java 中 + 操作符的优先级大于 ==，所以输出部分表达式等于 “s1 == s2 is:runoob” == “runoob”，该表达式计算结果为 false。
+```
+
+
 ## int 与 int 计算无法保留小数后几位 需要转成一个float
 ```java
 public float division(int a, int b) {
@@ -8,17 +15,6 @@ public float division(int a, int b) {
     float floatA = (float)a;
     return floatA / b;
 }
-```
-
-## 判断map是否有某个key
-```java
-map.containsKey(key);
-```
-
-## sort
-```java
-Arrays.sort(arr1); // 会影响原数组
-Arrays.equals(arr1, arr2);  // 判断数组元素是否全等
 ```
 
 ## Math.pow 返回的是double类型
@@ -51,6 +47,19 @@ BigInteger num1 = new BigInteger("1234567890");
 BigInteger num2 = BigInteger.valueOf(9876543210L);
 num1.xor(num2); //做异或运算
 ```
+
+
+## 任意类型的高精度计算
+```java
+public class Solution {
+	// write your code here
+	public<T> double numberSummation(T o1, T o2){
+		BigDecimal num = new BigDecimal(o1.toString()).add(new BigDecimal(o2.toString()));
+		return num.doubleValue();
+	}
+}
+```
+
 
 ## Π
 ```java
@@ -209,6 +218,19 @@ public List<String> sortName(List<String> list) {
 }
 ```
 
+## 判断map是否有某个key
+```java
+map.containsKey(key);
+```
+
+## sort
+```java
+Arrays.sort(arr1); // 会影响原数组
+Arrays.equals(arr1, arr2);  // 判断数组元素是否全等
+```
+
+
+
 ## Map按key排序
 ```java
 public static Map<String, Integer> sortMap(Map<String, Integer> map) {
@@ -240,16 +262,6 @@ list.removeIf(num -> (num % 3 == 0) || (num.toString().contains("3")));
 System.out.println(blist);
 ```
 
-## 任意类型的高精度计算
-```java
-public class Solution {
-	// write your code here
-	public<T> double numberSummation(T o1, T o2){
-		BigDecimal num = new BigDecimal(o1.toString()).add(new BigDecimal(o2.toString()));
-		return num.doubleValue();
-	}
-}
-```
 
 ## 泛型上下限
 ```java
@@ -349,8 +361,3 @@ Map<Student, Integer> res = new TreeMap<>(new Comparator<Student>() {
 });
 ```
 
-## 优先级
-
-```java
-// 因为在 Java 中 + 操作符的优先级大于 ==，所以输出部分表达式等于 “s1 == s2 is:runoob” == “runoob”，该表达式计算结果为 false。
-```
