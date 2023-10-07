@@ -18,7 +18,7 @@ hero:
       theme: alt
 features:
   - icon: 📦
-    title: Code
+    title: Feature
     details: 开箱即用的代码片段
     linkText: try
     link: /code/common/git
@@ -28,7 +28,7 @@ features:
     linkText: use
     link: /nav/
   - icon: ⚙
-    title: Feature
+    title: Config
     details: 项目开发的配置文件
     linkText: next
     link: /code/js/viteConfig

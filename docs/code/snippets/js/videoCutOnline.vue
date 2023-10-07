@@ -1,9 +1,6 @@
 <template></template>
 
 <script setup>
-// "@ffmpeg/core": "^0.10.0",
-// "@ffmpeg/ffmpeg": "^0.10.0",
-
 import { ref, onMounted, onUnmounted } from 'vue'
 import { createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
 

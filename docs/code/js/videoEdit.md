@@ -1,6 +1,6 @@
-# `@ffmpeg` 截取视频:scissors:{#videoCut}
+# `@ffmpeg` 编辑视频:scissors:{#videoEdit}
 
-在web端使用在线视频url或本地视频文件的裁剪，以及对视频画面的截取，但是前端进行视频操作可能会导致性能下降。
+在web端使用在线视频url或本地视频文件进行编辑，但是前端进行视频操作可能会导致性能下降。
 
 同时由于 `@ffmpeg` 版本不同会导致使用的 `api` 不同，使用前需要注意版本问题。
 
@@ -11,11 +11,11 @@
 1. `ffmpeg`
 :::code-group
 ```bash [yarn]
-yarn add @ffmpeg/ffmpeg@^0.10.0
+yarn add @ffmpeg/ffmpeg@^0.11.0
 ```
 
 ```bash [npm]
-npm install @ffmpeg/ffmpeg@^0.10.0
+npm install @ffmpeg/ffmpeg@^0.11.0
 ```
 :::
 
@@ -23,19 +23,20 @@ npm install @ffmpeg/ffmpeg@^0.10.0
 
 :::code-group
 ```bash [yarn]
-yarn add @ffmpeg/core@^0.10.0
+yarn add @ffmpeg/core@^0.11.0
 ```
 
 ```bash [npm]
-npm install @ffmpeg/core@^0.10.0
+npm install @ffmpeg/core@^0.11.0
 ```
 :::
 
 :::warning 注意
 处理过程需要使用到 `SharedArrayBuffer` ，但出于安全策略 `SharedArrayBuffer` 已经被禁止使用了。
-如果想在浏览器中继续使用需要设置响应头 COOP 和 COEP。
 
-如果是 vite 项目，需要在 vite.config.js 中配置。
+因此会提示报错信息 `SharedArrayBuffer is not defined` ，如果想在浏览器中继续使用需要设置响应头 COOP 和 COEP。
+
+如果是 vite 项目，需要在 `vite.config.js` 中配置。
 
 ```js
  server: {
@@ -49,7 +50,7 @@ npm install @ffmpeg/core@^0.10.0
     },
 ```
 
-如果使用 nginx 部署上线，则需要在 nginx.conf 中配置。
+如果使用 nginx 部署上线，则需要在 `nginx.conf` 中配置。
 ```
 server {
     listen 443 ssl;
@@ -60,22 +61,40 @@ server {
     }
 }
 ```
+
+>然而由于设置了响应头 COOP 和 COEP 强制了资源的同源获取，当我们需要获取不同源的图片等其他资源时就会获取失败，只能通过服务器代理的方式进行获取。
+
 :::
 
-## 在线视频url剪辑
+## 剪辑
+
+### 在线视频url剪辑
 
 :::details Source
 <<< @/code/snippets/js/videoCutOnline.vue {36-43}
 :::
 
-## 本地视频文件剪辑
+### 本地视频剪辑
 
 :::details Source
 <<< @/code/snippets/js/videoCutLocal.vue {42-49}
 :::
 
-## 获取视频画面截图
+## 合成
+
+### 在线视频url中添加图片
+
+:::details Source
+<<< @/code/snippets/js/videoComposeOnline.vue {47-52}
+:::
+
+
+## 获取帧
+
+### 本地视频获取关键帧画面
 
 :::details Source
 <<< @/code/snippets/js/videoShotLocal.vue {43-51}
 :::
+
+
