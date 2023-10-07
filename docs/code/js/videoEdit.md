@@ -80,6 +80,7 @@ server {
 <<< @/code/snippets/js/videoCutLocal.vue {42-49}
 :::
 
+
 ## 合成
 
 ### 在线视频url中添加图片
@@ -91,6 +92,12 @@ server {
 
 ## 获取帧
 
+### 在线视频url获取关键帧画面
+
+:::details Source
+<<< @/code/snippets/js/videoShotOnline.vue {43-51}
+:::
+
 ### 本地视频获取关键帧画面
 
 :::details Source
@@ -98,3 +105,28 @@ server {
 :::
 
 
+## 其他
+
+当需要视频二次编辑时，由于第一次处理后的视频以二进制地址的形式存储在内存中，因此本地或在线地址读取的方式均无法使用，需要在读取时将其进行转换。
+
+```js
+if (url.startsWith('blob:')) {
+    // 处理 Blob URL
+    const arrayBuffer = await fetchBlobAsArrayBuffer(url);
+    ffmpeg.FS('writeFile', inputName, new Uint8Array(arrayBuffer));
+} else if (url.startsWith('http://') || url.startsWith('https://')) {
+    // 处理网络地址
+    await ffmpeg.FS('writeFile', inputName, await fetchFile(url));
+}
+
+async function fetchBlobAsArrayBuffer (url) {
+    const response = await fetch(url);
+    const blob = await response.blob();
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsArrayBuffer(blob);
+    });
+}
+```
