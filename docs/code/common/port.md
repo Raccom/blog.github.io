@@ -18,7 +18,7 @@ netstat -a
 netstat -an | findstr "LISTENING"
 ```
 
-:::tip 提示
+:::tip
 此命令会过滤出所有处于监听状态的端口，包括TCP和UDP协议。
 :::
 
@@ -43,7 +43,7 @@ tasklist | findstr "80"
 telnet localhost 80
 ```
 
-:::tip 提示
+:::tip
 如果连接成功，则表示80端口是开放的。如果连接失败，则表示该端口没有开放。
 :::
 
@@ -59,7 +59,7 @@ telnet localhost 80
 portqry -n localhost -e 80
 ```
 
-:::tip 提示
+:::tip
 如果80端口开放，则会显示状态为LISTENING。如果80端口没有开放，则会显示状态为NOT LISTENING。
 :::
 

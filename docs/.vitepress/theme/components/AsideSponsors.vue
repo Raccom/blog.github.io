@@ -69,8 +69,8 @@ const data = [
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    background-color: var(--vp-c-bg-alt);
-    border: 2px solid var(--vp-c-bg-alt);
+    background-color: var(--vp-c-bg-soft);
+    border: 2px solid var(--vp-c-bg-soft);
     transition: border-color 0.5s;
 }
 

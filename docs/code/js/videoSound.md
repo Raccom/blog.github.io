@@ -18,7 +18,7 @@
     </button>
 </div>
 
-:::info Source
+:::info 源码
 <<< @/code/snippets/js/videoSound.vue {55,60-68}
 :::
 

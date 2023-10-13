@@ -30,7 +30,7 @@
 
 通过判断每一组 `rgb` 的值是否为绿幕像素，然后设置其 `alpha` 的值为 `0`。
 
-:::warning 注意
+:::warning
 由于uniapp中的canvas经过封装，且 uniapp 的 `drawImage` 无法绘制 `video` 标签内容，因此uniapp中不适用。
 :::
 
@@ -54,7 +54,7 @@
 因为canvas会受到跨域的影响导致画布污染，因此首先需要将 [测试视频](http://repo.bfw.wiki/bfwrepo/video/63e1dd7ddd2b0.mp4) 下载到本地。
 :::
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoRemove.vue
 :::
 
@@ -98,7 +98,7 @@
 
 计算完之后把结果赋给 `x` 的 `alpha` 值。
 
-:::tip 提示
+:::tip
 由于遍历时 前一个像素的修改 会影响 后一个像素获取周围的值。
 
 ```
@@ -133,7 +133,7 @@
     </div>
 </div>
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoRemovePlus.vue
 :::
 

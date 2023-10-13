@@ -63,6 +63,6 @@ module.exports = {
 |landscapeUnit|	(String)横屏时使用的单位|
 |landscapeWidth|	(Number)横屏时使用的视口宽度|
 
-:::tip 提示
+:::tip
 更多参数及设置参考 [官方文档](https://github.com/evrone/postcss-px-to-viewport/blob/master/README_CN.md)
 :::

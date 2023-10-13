@@ -31,7 +31,7 @@ npm install @ffmpeg/core@^0.11.0
 ```
 :::
 
-:::warning 注意
+:::warning
 处理过程需要使用到 `SharedArrayBuffer` ，但出于安全策略 `SharedArrayBuffer` 已经被禁止使用了。
 
 因此会提示报错信息 `SharedArrayBuffer is not defined` ，如果想在浏览器中继续使用需要设置响应头 COOP 和 COEP。
@@ -70,13 +70,13 @@ server {
 
 ### 在线视频url剪辑
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoCutOnline.vue {36-43}
 :::
 
 ### 本地视频剪辑
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoCutLocal.vue {42-49}
 :::
 
@@ -85,7 +85,7 @@ server {
 
 ### 在线视频url中添加图片
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoComposeOnline.vue {47-52}
 :::
 
@@ -94,13 +94,13 @@ server {
 
 ### 在线视频url获取关键帧画面
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoShotOnline.vue {43-51}
 :::
 
 ### 本地视频获取关键帧画面
 
-:::details Source
+:::details
 <<< @/code/snippets/js/videoShotLocal.vue {43-51}
 :::
 

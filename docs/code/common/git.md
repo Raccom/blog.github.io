@@ -18,7 +18,7 @@ git config core.autocrlf false
 2. 按下 `Shift` + `;`
 3. 输入 `q!` 或 `wq!`
 
-:::info 信息
+:::info
 `q!` 是不保存改动，`wq!` 是保存文件的写入修改
 :::
 
@@ -40,7 +40,7 @@ ssh-keygen
 
 当使用 `HTTP` 的方式拉取其他用户的公开 `github` 的仓库，或提交代码时，经常会由于网络原因经常失败或中断，出现 **timeout: 443**。
 
-:::tip 提示
+:::tip
 使用 `ssh` 断开连接的情况较少，在使用个人仓库时推荐使用 `ssh` 连接。
 :::
 
@@ -70,7 +70,7 @@ git config --global --unset https.proxy
 ```
 :::
 
-:::warning 注意
+:::warning
 命令中的`7890` 端口是使用的 `VPN` 系统代理的端口，需要根据软件中使用的端口进行替换。
 
 在使用完后需要取消代理，否则关闭`VPN`，`Git`的连接也会收到影响。
