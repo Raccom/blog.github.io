@@ -83,7 +83,7 @@ server {
 
 ## 合成
 
-### 在线视频url中添加图片
+### 在线视频url中添加图片或gif
 
 :::details
 <<< @/code/snippets/js/videoComposeOnline.vue {47-52}
