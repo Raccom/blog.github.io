@@ -9,9 +9,9 @@ const fileType = ref("") // 视频文件类型
 
 /**
  * 根据在线的视频地址截取片段
- * @param {String} url 在线视频链接
- * @param {Number|String} startTime 截取开始时间
- * @param {Number|String} endTime 截取结束时间
+ * @param {string} url 在线视频链接
+ * @param {number|string} startTime 截取开始时间
+ * @param {number|string} endTime 截取结束时间
  * @param {Function} callBack 回调函数
  */
 const videoCut = async (url, startTime, endTime, callBack) => {

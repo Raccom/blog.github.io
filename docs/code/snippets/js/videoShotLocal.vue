@@ -21,9 +21,9 @@ const fileChange = (e) => {
 
 /**
  * 根据选择的视频文件获取视频截图
- * @param {File} file 选择的视频文件
- * @param {Number|String} count 截取图片的次数
- * @param {Number|String} interval 截取图片的间隔
+ * @param {file} file 选择的视频文件
+ * @param {number|string} count 截取图片的次数
+ * @param {number|string} interval 截取图片的间隔
  * @param {Function} callBack 回调
  */
 const videoFrame = async (file, count, interval, callBack) => {

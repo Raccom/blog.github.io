@@ -9,9 +9,9 @@ const fileType = ref("") // 视频文件类型
 
 /**
  * 根据在线视频获取视频截图
- * @param {String} url 在线视频链接
- * @param {Number|String} count 截取图片的次数
- * @param {Number|String} interval 截取图片的间隔
+ * @param {string} url 在线视频链接
+ * @param {number|string} count 截取图片的次数
+ * @param {number|string} interval 截取图片的间隔
  * @param {Function} callBack 回调
  */
 const videoFrame = async (url, count, interval, callBack) => {

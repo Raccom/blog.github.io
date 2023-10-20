@@ -19,9 +19,9 @@ const fileChange = (e) => {
 
 /**
  * 根据选择的视频文件截取片段
- * @param {File} file 选择的视频文件
- * @param {Number|String} startTime 截取开始时间
- * @param {Number|String} endTime 截取结束时间
+ * @param {file} file 选择的视频文件
+ * @param {number|string} startTime 截取开始时间
+ * @param {number|string} endTime 截取结束时间
  * @param {Function} callBack 回调函数
  */
 const videoCut = async (file, startTime, endTime, callBack) => {

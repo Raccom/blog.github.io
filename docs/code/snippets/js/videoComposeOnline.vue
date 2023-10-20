@@ -100,8 +100,8 @@ onMounted(async () => {
         url: 'https://raccom.cc/logo.png',
         x: 100,
         y: 100
-    })
-    downloadFile(fileUrl)
+    });
+    downloadFile(fileUrl);
 })
 
 onUnmounted(() => {
