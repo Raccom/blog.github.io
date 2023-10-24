@@ -26,7 +26,7 @@
 
 <div class="demo">
     <div class='pc' v-if='!isMobile'>
-        <button v-if="!showFont" @click="showFont=true">show Result</button>
+        <button v-if="!showFont" @click="showFont=true">Preview</button>
         <FontVerify v-if="showFont" />
     </div>
     <div class='desc' v-if='isMobile'>
@@ -47,7 +47,7 @@
 
 <div class="demo">
     <div class='pc' v-if='!isMobile'>
-        <button v-show="!showSlider" @click="showSlider=true">show Result</button>
+        <button v-show="!showSlider" @click="showSlider=true">Preview</button>
         <SliderVerify v-show="showSlider" />
     </div>
     <div class='desc' v-if='isMobile'>

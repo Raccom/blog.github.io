@@ -14,9 +14,7 @@ outline: [1, 2]
 <style lang='scss'></style>
 
 
-
 # 组件
-
 
 ### Title <Badge type="info" text="default" />
 ### Title <Badge type="tip" text="^1.9.0" />

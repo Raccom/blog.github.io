@@ -38,7 +38,7 @@
 
 <div class="demo videoRemove">
     <div class='pc' v-if='!isMobile'>
-        <button v-if="!showVideo" @click="showVideo=true">show Result</button>
+        <button v-if="!showVideo" @click="showVideo=true">Preview</button>
         <VideoRemove v-if="showVideo"/>
         <div class='desc' v-if="showVideo">
             <p>⚠可以看到边缘仍有绿幕像素闪烁(暗色主题下更明显)。</p>
@@ -125,7 +125,7 @@
 
 <div class="demo videoRemove">
     <div class='pc' v-if='!isMobile'>
-        <button v-if="!showVideoPlus" @click="showVideoPlus=true">show Result</button>
+        <button v-if="!showVideoPlus" @click="showVideoPlus=true">Preview</button>
         <VideoRemovePlus v-if="showVideoPlus" />
     </div>
     <div class='desc' v-if='isMobile'>
