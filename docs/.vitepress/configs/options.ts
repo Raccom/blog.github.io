@@ -21,6 +21,10 @@ const jsRouter: RouterItem[] = [
         path: 'videoSound'
     },
     {
+        name: '人机认证',
+        path: 'verify'
+    },
+    {
         name: '移动端自适应',
         path: 'postcss'
     },

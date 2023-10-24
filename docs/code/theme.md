@@ -5,7 +5,7 @@ outline: [1, 2]
 
 <script setup>
   import {ref} from 'vue';
-  import Modal from '/code/snippets/js/modal.vue'
+
   const test = ref(1);
   const c = () => {
     test.value++
@@ -31,7 +31,7 @@ outline: [1, 2]
 <button @click="c">+</button>
 </div>
 
-<Modal/>
+
 
 ```diff
 -VITE_APP=ab#cd`ef

@@ -1,18 +1,31 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const showModal = ref(false)
+
+interface Prop {
+    showModal: boolean,
+    closeModal: Function,
+    content: string
+}
+
+const props = withDefaults(defineProps<Prop>(), {
+    showModal: false,
+    closeModal: () => {},
+    content: ''
+})
+
+const close = () => {
+    props.closeModal();
+}
 </script>
 
 <template>
-    <button class="modal-button" @click="showModal = true">Show Modal</button>
-
-    <Teleport to="body">
+   <Teleport to="body">
         <Transition name="modal">
             <div v-show="showModal" class="modal-mask">
                 <div class="modal-container">
-                    <p>Hello from the modal!</p>
+                    <p>{{ content }}</p>
                     <div class="model-footer">
-                        <button class="modal-button" @click="showModal = false">
+                        <button class="modal-button" @click="close">
                             Close
                         </button>
                     </div>
