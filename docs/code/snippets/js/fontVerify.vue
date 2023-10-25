@@ -44,6 +44,7 @@ onMounted(() => {
 .fontVerify {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     #picyzm {
         width: 100px;
