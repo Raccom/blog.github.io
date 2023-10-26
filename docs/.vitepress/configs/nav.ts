@@ -44,15 +44,7 @@ export const nav: DefaultTheme.Config['nav'] = [
         activeMatch: '^/iframe/'
     },
     {
-        text: 'CSDN',
-        link: 'https://blog.csdn.net/Raccon_'
-    },
-    {
         text: 'Cos',
         items: cosPath,
-    },
-    {
-        text: 'Component',
-        link: '/code/theme',
     },
 ]

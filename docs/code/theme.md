@@ -30,7 +30,6 @@ outline: [1, 2]
 </div>
 
 
-
 ```diff
 -VITE_APP=ab#cd`ef
 +VITE_APP="ab#cd`ef"
@@ -127,10 +126,6 @@ export default {
   }
 }
 ```
-
-
-
-
 
 ```ts {1}
 // line-numbers is disabled by default
