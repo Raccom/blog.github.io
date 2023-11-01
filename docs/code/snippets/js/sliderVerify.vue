@@ -67,14 +67,14 @@ const pathList = {
         error: new URL(`/images/js/verify/icons/fail.svg`, import.meta.url).href,
     },
     bg: [
-        new URL(`/images/js/verify/bg/1.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/2.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/3.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/4.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/5.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/6.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/7.jpg`, import.meta.url).href,
-        new URL(`/images/js/verify/bg/8.jpg`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/1.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/2.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/3.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/4.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/5.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/6.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/7.webp`, import.meta.url).href,
+        new URL(`/images/js/verify/bg/8.webp`, import.meta.url).href,
     ]
 }
 
