@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <Modal :content="content" :showModal="showModal" :closeModal="closeModal"/>
+        <Modal :content="content" v-model="showModal"/>
     </div>
 </template>
 
@@ -77,8 +77,6 @@ const pathList = {
         new URL(`/images/js/verify/bg/8.jpg`, import.meta.url).href,
     ]
 }
-
-const closeModal = () => showModal.value = false;
 
 /**
 * 绘制拼图块的形状 并根据填充方式opt选择 填充渲染 或 剪切渲染

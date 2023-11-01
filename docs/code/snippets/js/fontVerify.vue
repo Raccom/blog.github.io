@@ -3,7 +3,7 @@
         <p id="picyzm"/>
         <input type="text" v-model="inputCode" ref="inputRef" autofocus @keyup="startVerify" class="fontInput"/>
     </div>
-    <Modal :content="content" :showModal="showModal" :closeModal="closeModal"/>
+    <Modal :content="content" v-model="showModal"/>
 </template>
 
 <script setup>
@@ -15,11 +15,6 @@ const inputCode = ref(''); // input框输入内容
 const verifyValue = ref(null); // 验证码对象实例
 const content = ref('验证通过');
 const showModal = ref(false);
-
-const closeModal = () => {
-    showModal.value = false;
-}
-
 
 // 开始验证
 const startVerify = () => {

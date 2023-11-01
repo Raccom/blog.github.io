@@ -1,20 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 interface Prop {
-    showModal: boolean,
-    closeModal: Function,
+    modelValue: boolean,
     content: string
 }
 
 const props = withDefaults(defineProps<Prop>(), {
-    showModal: false,
-    closeModal: () => {},
+    modelValue: false,
     content: ''
 })
 
+const emit = defineEmits(['update:modelValue']);
+
+const showModal = computed({
+    get: () => props.modelValue,
+    set: (value) => emit('update:modelValue', value)
+})
+
 const close = () => {
-    props.closeModal();
+    showModal.value = false;
 }
 </script>
 
