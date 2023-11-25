@@ -3,12 +3,12 @@ layout: home
 layoutClass: 'm-home-layout'
 
 hero:
-  name: Raccom's
+  name: Joseph Liang's
   text: Dev Utils
   tagline: Cold Winter Has Arrived
   image:
     src: /logo.png
-    alt: raccom
+    alt: Joseph Liang
   actions:
     - text: Get Started
       link: /code/java/note

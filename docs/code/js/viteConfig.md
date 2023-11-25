@@ -10,11 +10,11 @@
 :::code-group
 
 ```bash [ssh]
-git clone git@github.com:Raccom/viteTemplate.git
+git clone git@github.com:josliang/vitemp.git
 ```
 
 ```bash [https]
-git clone https://github.com/Raccom/viteTemplate.git
+git clone https://github.com/josliang/vitemp.git
 ```
 :::
 

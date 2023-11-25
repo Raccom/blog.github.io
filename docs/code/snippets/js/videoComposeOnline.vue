@@ -97,7 +97,7 @@ onMounted(async () => {
         duration: 3,
         scale: 1,
         startT: "0.00",
-        url: 'https://raccom.cc/logo.png',
+        url: 'https://josliang.com/logo.png',
         x: 100,
         y: 100
     });

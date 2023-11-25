@@ -9,7 +9,7 @@ export default defineConfig({
     // 语言
     lang: 'zh-CN',
     // 标题
-    title: 'Raccom',
+    title: 'Joseph Liang',
     // 描述
     description: 'tools',
     // 顶部栏配置
@@ -73,7 +73,7 @@ export default defineConfig({
         */
 
         // 顶部栏右侧icon
-        socialLinks: [{ icon: 'github', link: 'https://github.com/raccom' }],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/josliang' }],
 
         /* 右侧大纲配置 */
         outline: {
@@ -83,7 +83,7 @@ export default defineConfig({
 
         // 页面底部栏
         editLink: {
-            pattern: 'https://github.com/Raccom/raccom.github.io/tree/main/docs/:path',
+            pattern: 'https://github.com/josliang/josliang.github.io/tree/main/docs/:path',
             text: '在 Github 上编辑此页'
         },
 
@@ -100,7 +100,7 @@ export default defineConfig({
         // 底部栏
         footer: {
             message: 'Early Access',
-            copyright: 'Copyright © 2022-present Raccom'
+            copyright: 'Copyright © 2022-present Joseph Liang'
         },
 
         darkModeSwitchLabel: '外观',

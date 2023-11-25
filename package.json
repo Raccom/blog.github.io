@@ -1,5 +1,5 @@
 {
-    "name": "raccom",
+    "name": "josliang",
     "version": "1.0.0",
     "description": "dev tools",
     "private": true,
@@ -9,7 +9,7 @@
         "build": "vitepress build docs",
         "preview": "vitepress preview docs"
     },
-    "author": "raccom <tyuf64@163.com>",
+    "author": "josliang <tyuf64@163.com>",
     "license": "MIT",
     "devDependencies": {
         "@mdit-vue/shared": "^0.12.0",

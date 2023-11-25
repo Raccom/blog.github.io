@@ -5,7 +5,7 @@ export const head: HeadConfig[] = [
     ['meta', { name: 'theme-color', content: '#5f67ee' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'zh-CN' }],
-    ['meta', { name: 'og:site_name', content: 'Raccom' }],
+    ['meta', { name: 'og:site_name', content: 'Joseph Liang' }],
 
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
