@@ -72,7 +72,7 @@ javascript: void (function () {
 ```
 :::
 ::: details 模拟实现 new 运算符 
-<<< @/code/snippets/java/test.js 
+<<< @/public/favicon.ico
 :::
 
 ```ts {2}

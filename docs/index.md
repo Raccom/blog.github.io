@@ -1,47 +1,15 @@
 ---
 layout: home
-layoutClass: 'm-home-layout'
 
 hero:
-  name: Joseph Liang's
-  text: Dev Utils
-  tagline: Cold Winter Has Arrived
-  image:
-    src: /logo.png
-    alt: Joseph Liang
+  name: VitePress
+  text: Vite & Vue powered static site generator.
+  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
   actions:
-    - text: Get Started
-      link: /code/java/note
-      theme: brand
-    - text: Nav
-      link: /nav/
-      theme: alt
-features:
-  - icon: 📦
-    title: Feature
-    details: 开箱即用的代码片段
-    linkText: try
-    link: /code/common/git
-  - icon: 🛠
-    title: Tools
-    details: 日常使用的工具整理
-    linkText: use
-    link: /nav/
-  - icon: ⚙
-    title: Config
-    details: 项目开发的配置文件
-    linkText: next
-    link: /code/js/viteConfig
+    - theme: brand
+      text: Get Started
+      link: /posts/theme
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/vuejs/vitepress
 ---
-
-<style lang="scss">
-.m-home-layout .image-src{
-    opacity: 0.9;
-    transition: .3s;
-    &:hover {
-        opacity: 1;
-    }
-}
-</style>
-
-<script lang="ts" setup></script>

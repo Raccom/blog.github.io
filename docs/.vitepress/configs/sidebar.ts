@@ -1,34 +1,11 @@
-import type {DefaultTheme} from 'vitepress'
-import {javaPath, jsPath, tsPath, CommonPath} from './options'
+import type { DefaultTheme } from 'vitepress'
 
-export const sidebar: DefaultTheme.Config['sidebar'] = {
-    '/code/': {
-        base: '/code/',
-        items: [
-            {
-                text: 'Java',
-                base: '/code/java/',
-                collapsed: true,
-                items: javaPath
-            },
-            {
-                text: 'JavaScript',
-                base: '/code/js/',
-                collapsed: true,
-                items: jsPath
-            },
-            {
-                text: 'TypeScript',
-                base: '/code/ts/',
-                collapsed: true,
-                items: tsPath
-            },
-            {
-                text: 'Common',
-                base: '/code/common/',
-                collapsed: true,
-                items: CommonPath
-            },
-        ]
-    }
-}
+export const sidebar: DefaultTheme.Config['sidebar'] = [
+  {
+    text: 'Introduction',
+    collapsed: false,
+    items: [
+      { text: 'VitePress Theme', link: '/posts/theme.md' },
+    ]
+  },
+]
